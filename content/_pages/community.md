@@ -12,6 +12,8 @@ ARKs.
 
 <!--more-->
 
+{% include content/section.html do="start" color="alt" label="How to get involved" %}
+
 The ARK Alliance community comprises institutions and people who use or assign
 ARK identifiers as well as those interested in promoting ARKs and sustaining
 the open ARK infrastructure, which consists of standards, best practices, the
@@ -46,6 +48,8 @@ committed to the long-term preservation of digital information.
     or 🇫🇷 une [enquête ARK] (version française)
 9.  Tell us about your [interest in helping with the work of the ARK Alliance]
 10.  [Contact us] about joining one of the [working groups]
+
+{% include content/section.html do="changeto" color="main" label="Who is creating ARKs" %}
 
 ## Who is creating ARKs
 

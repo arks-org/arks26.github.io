@@ -13,6 +13,8 @@ into ARK Alliance.
 
 <!--more-->
 
+{% include content/section.html do="start" color="alt" label="ARK Basics" %}
+
 Did you know...
 
 * ... that ARK is a PID (Persistent IDentifier), along with DOI, ORCID, and ROR?
@@ -42,6 +44,8 @@ French, and Spanish:
 -   [FAQ about ARK identifiers 🇬🇧]
 -   [FAQ sur les identifiants ARK 🇫🇷]
 -   [FAQ sobre identificadores ARK 🇪🇸]
+
+{% include content/section.html do="changeto" color="main" label="Recommended for all" %}
 
 ## Recommended for all users
 
@@ -86,6 +90,8 @@ French, and Spanish:
 -   Get a Name Assigning Authority Number (NAAN)
 -   Decide what ARK features you need
 -   Choose (or build) an ARK system
+
+{% include content/section.html do="changeto" color="alt" label="Recommended for developers" %}
 
 ## Recommended for developers
 

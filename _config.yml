@@ -122,6 +122,12 @@ defaults:
     values:
       layout: page
   - scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      # add/remove a value after colon to add/remove callout box on all pages
+      callout: "***Notice***: &nbsp; This site is undergoing changes for accessibility and usability."
+  - scope:
       path: "assets/documents"
     values:
       document: true

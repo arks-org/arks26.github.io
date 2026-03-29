@@ -1,4 +1,9 @@
-<figure class="image">
-  <img src="{{ include.url }}" alt="{{ include.description }}">
-  <figcaption>{{ include.description }}</figcaption>
+<figure class="ark-alliance__figure">
+  <img style="display: block; max-width: 100%; height: auto;"
+       src="{{ site.baseurl }}{{ include.url }}"
+       alt="{{ include.description | strip_html }}" />
+  <figcaption class="ark-alliance__caption">
+    {{ include.description | markdownify }}
+  </figcaption>
 </figure>
+

@@ -10,6 +10,8 @@ A helpful list of resources, documentation, and services.
 
 <!--more-->
 
+{% include content/section.html do="start" color="alt" label="Basics" %}
+
 | **BASICS** <br/> &nbsp;•&nbsp; [The ARK Tutorial][17] introduces Archival Resource Keys in 30 minutes. <br/> &nbsp;•&nbsp; [NAAN form] to *get started* creating ARKs or to *update* your existing NAAN. <br/> &nbsp;•&nbsp; See the [current and evolving specifications] to keep up with the latest. <br/> &nbsp;•&nbsp; First ARK paper, [*Towards Electronic Persistence Using ARK Identifiers*], 2003. <br/> &nbsp;•&nbsp; [General identifier concepts and conventions], first articulated for ARKs. <br/> &nbsp;•&nbsp; [ARK Identifier Scheme specification]({{ site.ark_spec_current }}) for technical details. <br/> &nbsp;•&nbsp; The Archival Resource Key at [wikipedia]. <br/> &nbsp;•&nbsp; ARK logos, no background, PNG and SVG. &nbsp; ![][ARK logo PNG]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140" title="PNG logo; right-click and 'Save image as...'" alt="ARK logo, PNG format"} &nbsp;&nbsp; ![][ARK logo SVG]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140" title="SVG logo; right-click and 'Save image as...'" alt="ARK logo, SVG format"} &nbsp; | ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="400" width="500"} <br/> _The Mazarine Library, Paris, which assigns ARKs under <br/> the NAAN 61562 (photo by Marie-Lan Nguyen)._ |
 
 -   The [Arklet-Frick][] software package is the Frick Collection's enhanced
@@ -17,6 +19,8 @@ A helpful list of resources, documentation, and services.
     passthrough, shoulder rules, extensive metadata, inflections, and more. 
 -   [N2T.net] resolver: Name-to-Thing, a global resolver for ARKs and other
     identifiers, currently hosted at the [CDL].
+
+{% include content/section.html do="changeto" color="main" label="Software" %}
 
 ## Plug-ins and software
 
@@ -61,6 +65,8 @@ To get your software listed please [let us know] about it.
     significant expertise to set up and run, and consists of a generic Eggnog
     minting, binding, and resolution package plus a [legacy N2T admin] package.
     Replaced by the resolver code above.
+
+{% include content/section.html do="changeto" color="alt" label="Presentations" %}
 
 ## Selected presentations
 

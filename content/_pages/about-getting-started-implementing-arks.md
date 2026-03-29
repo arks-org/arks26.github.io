@@ -13,6 +13,8 @@ features, selecting or building an ARK system, and more.
 
 <!--more-->
 
+{% include content/section.html do="start" color="alt" label="Introduction" %}
+
 Become familiar with
 
 - the Archival Resource Key (ARK) summary on the https://arks.org homepage and
@@ -24,6 +26,8 @@ When you are ready to start using ARKs you will need to
 -   decide what ARK features you need, and
 -   choose your local ARK resolver system, usually your website modified
     just enough to respond correctly to URLs containing "ark:<your_NAAN>".
+
+{% include content/section.html do="changeto" color="main" label="What you need to start" %}
 
 ## Get a Name Assigning Authority Number (NAAN)
 
@@ -65,6 +69,8 @@ passthrough] feature (implemented by the [Frick Collection tool]).
 This can be useful if your resources contain many sub-resources with a large
 number of files per resource.
 
+{% include content/section.html do="changeto" color="alt" label="Your local resolver set up" %}
+
 ## Choose your local ARK resolver system
 
 Because ARKs are free, open identifiers, there are many choices for
@@ -98,6 +104,7 @@ Read more about:
     statements)
 -   [Service providers]
 
+{% include content/section.html do="end" %}
 
 [NAAN request form]: {{ site.naan_form_url }}
 [General identifier concepts and conventions]: about-identifier-concepts-and-conventions.md
