@@ -39,7 +39,7 @@ physical, or abstract.
 {% include content/section.html do="changeto" color="alt" label="ARKs compared to DOIs, URNs, and Handles" %}
 
 ARKs are similar to DOIs, URNs, and Handles. All of them
-{: .ark-alliance__tertiary}
+{: .arka__tertiary}
 
 -   were introduced over {{ site.ark_age }} ago,
 -   exist in large numbers ({{ site.num_arks }} ARKs, {{ site.num_dois }} DOIs,
@@ -50,7 +50,7 @@ ARKs are similar to DOIs, URNs, and Handles. All of them
     Wikipedia, ORCiD.org profiles, etc.
 
 In contrast, ARKs are cheaper, more flexible, and less centralized, letting you
-{: .ark-alliance__tertiary}
+{: .arka__tertiary}
 
 -   create unlimited identifiers without paying for the right to do so,
 -   add any kind of metadata, including no metadata,
@@ -64,7 +64,7 @@ In contrast, ARKs are cheaper, more flexible, and less centralized, letting you
 To get started creating ARKs, please fill out [this request form] for your
 organization. If you wish to get involved in the ARK Alliance, consider
 joining one of its [working groups].
-{: .ark-alliance__highlight}
+{: .arka__highlight}
 
 {% include content/image.html
   url="/assets/images/pages/index/cropped-ARKsInTheOpen-1536x957.jpg"

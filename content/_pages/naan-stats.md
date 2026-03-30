@@ -74,7 +74,7 @@ appear below.
 <ul id="naan_latest"></ul>
 
 <br/>
-<small class="ark-alliance__tagline d-block text-secondary text-uppercase fs-6">
+<small class="arka__tagline d-block text-secondary text-uppercase fs-6">
   Page concept and JavaScript credit: Bob Coret, National Library of the Netherlands
 </small>
 

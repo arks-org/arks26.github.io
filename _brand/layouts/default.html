@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="auto">
   {% include head/head.element.html %}
 
-  <body class="ark-alliance">
+  <body class="arka">
 
    {% include header/svg-symbols.html %}
    {% include header/header.html %}
@@ -12,15 +12,15 @@
    {% if page.background == "warm" %}
      {% assign bg = "main" %}
    {% endif %}
-   <section class="ark-alliance__section--{{ bg }}">
+   <section class="arka__section--{{ bg }}">
 
     {% if page.callout %}
-    <div class="ark-alliance__content container my-4">
+    <div class="arka__content container my-4">
       {% include header/callout.html content=page.callout %}
     </div>
     {% endif %}
 
-    <div class="ark-alliance__content ark-alliance__content--title container">
+    <div class="arka__content arka__content--title container">
       <h1> {{ page.title }} </h1>
     </div>
    </section>
