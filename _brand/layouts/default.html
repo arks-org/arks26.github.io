@@ -8,11 +8,7 @@
    {% include header/header.html %}
    {% include navigation/top.html %}
 
-   {% assign bg = "alt" %}
-   {% if page.background == "warm" %}
-     {% assign bg = "main" %}
-   {% endif %}
-   <section class="arka__section--{{ bg }}">
+   <section class="arka__section arka__section--{{ page.background | default: "cool" }}" aria-label="Title area">
 
     {% if page.callout %}
     <div class="arka__content container my-4">

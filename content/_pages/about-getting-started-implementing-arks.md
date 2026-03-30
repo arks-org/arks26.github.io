@@ -13,7 +13,7 @@ features, selecting or building an ARK system, and more.
 
 <!--more-->
 
-{% include content/section.html do="start" color="alt" label="Introduction" %}
+{% include content/section.html do="start" color="cool" label="Introduction" %}
 
 Become familiar with
 
@@ -27,7 +27,7 @@ When you are ready to start using ARKs you will need to
 -   choose your local ARK resolver system, usually your website modified
     just enough to respond correctly to URLs containing "ark:<your_NAAN>".
 
-{% include content/section.html do="changeto" color="main" label="What you need to start" %}
+{% include content/section.html do="changeto" color="warm" label="What you need to start" %}
 
 ## Get a Name Assigning Authority Number (NAAN)
 
@@ -69,7 +69,7 @@ passthrough] feature (implemented by the [Frick Collection tool]).
 This can be useful if your resources contain many sub-resources with a large
 number of files per resource.
 
-{% include content/section.html do="changeto" color="alt" label="Your local resolver set up" %}
+{% include content/section.html do="changeto" color="cool" label="Your local resolver set up" %}
 
 ## Choose your local ARK resolver system
 

@@ -1,34 +1,34 @@
 @import "utils";
 
 :root {
-  --ark-color-text: #424242;
-  --ark-color-link: #1345f8;
-  --ark-color-gold: #976e07;
+  --arka-color-text: #424242;
+  --arka-color-link: #1345f8;
+  --arka-color-gold: #976e07;
 
-  --ark-bg-main: #f9f4e7;
-  --ark-bg-alt: #ffffff;
-  --ark-bg-dark: #000000;
+  --arka-bg-warm: #f9f4e7;
+  --arka-bg-cool: #ffffff;
+  --arka-bg-dark: #000000;
 
-  --ark-callout-bg: #e3f5ff;
-  --ark-callout-border: #063e5d;
+  --arka-callout-bg: #e3f5ff;
+  --arka-callout-border: #063e5d;
 
-  --ark-highlight-bg: #424242;
-  --ark-highlight-text: #ffffff;
-  --ark-highlight-link: #fcd36f;
+  --arka-highlight-bg: #424242;
+  --arka-highlight-text: #ffffff;
+  --arka-highlight-link: #fcd36f;
 
-  --ark-caption-color: #5f5a50;
-  --ark-tagline-color: #b3b3b3;
-  --ark-header-text: #ffffff;
+  --arka-caption-color: #5f5a50;
+  --arka-tagline-color: #b3b3b3;
+  --arka-header-text: #ffffff;
 
-  --ark-radius-sm: 0.25rem;
-  --ark-radius-md: 0.5rem;
+  --arka-radius-sm: 0.25rem;
+  --arka-radius-md: 0.5rem;
 
-  // --ark-content-max-width: 980px;
+  // --arka-content-max-width: 980px;
 }
 
 /* Bootstrap override */
 .navbar {
-  --bs-navbar-active-color: var(--ark-color-gold);
+  --bs-navbar-active-color: var(--arka-color-gold);
 }
 
 /* Global navbar tuning */
@@ -56,20 +56,20 @@
 
   /* header */
   &__site-header {
-    background-color: var(--ark-bg-dark);
-    color: var(--ark-header-text);
+    background-color: var(--arka-bg-dark);
+    color: var(--arka-header-text);
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
   }
 
   &__title {
-    color: var(--ark-header-text);
+    color: var(--arka-header-text);
     margin-bottom: 0.2rem;
     line-height: 1.05;
   }
 
   &__tagline {
-    color: var(--ark-tagline-color);
+    color: var(--arka-tagline-color);
     font-size: 0.95rem;
     line-height: 1.35;
     letter-spacing: 0.01em;
@@ -84,7 +84,7 @@
 
   /* navbar */
   &__navbar {
-    background-color: var(--ark-bg-alt);
+    background-color: var(--arka-bg-cool);
     border-top: 1px solid rgba(0, 0, 0, 0.08);
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     font-size: 0.92rem;
@@ -103,17 +103,17 @@
 
   &__navbar .nav-link.active {
     font-weight: 800;
-    color: var(--ark-color-gold);
+    color: var(--arka-color-gold);
   }
 
   &__navbar .nav-link:hover,
   &__navbar .nav-link:focus {
-    color: var(--ark-color-gold);
+    color: var(--arka-color-gold);
   }
 
   /* breadcrumbs */
   &__breadcrumbs {
-    background-color: var(--ark-bg-main);
+    background-color: var(--arka-bg-warm);
     padding: 0.85rem 0 0;
     font-size: 0.88rem;
   }
@@ -125,11 +125,11 @@
 
   &__breadcrumbs .breadcrumb-item,
   &__breadcrumbs .breadcrumb-item.active {
-    color: var(--ark-color-text);
+    color: var(--arka-color-text);
   }
 
   &__breadcrumbs .breadcrumb-item a {
-    color: var(--ark-color-link);
+    color: var(--arka-color-link);
     text-decoration: none;
   }
 
@@ -145,31 +145,31 @@
   /* page background regions */
   &__section {
     width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
-  &__section--main {
-    background-color: var(--ark-bg-main);
+  &__section--warm {
+    background-color: var(--arka-bg-warm);
     padding-top: 0.1px; // Prevents margin collapse
   }
 
-  &__section--alt {
-    background-color: var(--ark-bg-alt);
+  &__section--cool {
+    background-color: var(--arka-bg-cool);
     padding-top: 0.1px; // Prevents margin collapse
   }
 
   &__section--dark {
-    background-color: var(--ark-bg-dark);
+    background-color: var(--arka-bg-dark);
     color: #fff;
   }
 
   /* central content region */
   &__content {
-    color: var(--ark-color-text);
+    color: var(--arka-color-text);
     font-size: 1.25rem;
     line-height: 1.65;
-    // max-width: var(--ark-content-max-width);
+    // max-width: var(--arka-content-max-width);
   }
 
   &__content h1 {
@@ -191,20 +191,20 @@
   &__content h2,
   &__content h3.section-heading,
   &__section-heading {
-    color: var(--ark-color-gold);
+    color: var(--arka-color-gold);
     font-size: 1.9rem;
     font-weight: 400;
   }
 
   /* gold tertiary headings */
   &__tertiary {
-    color: var(--ark-color-gold);
+    color: var(--arka-color-gold);
     font-size: 1.4rem;
     font-weight: 400;
   }
 
   &__content a {
-    color: var(--ark-color-link);
+    color: var(--arka-color-link);
     text-decoration: underline;
     text-underline-offset: 0.1em;
   }
@@ -227,9 +227,9 @@
 
   /* blue notification/callout */
   &__callout {
-    background-color: var(--ark-callout-bg);
-    border: 1px solid var(--ark-callout-border);
-    color: var(--ark-callout-border);
+    background-color: var(--arka-callout-bg);
+    border: 1px solid var(--arka-callout-border);
+    color: var(--arka-callout-border);
     padding: 1rem 1.25rem;
     margin: 1.5rem 0;
     display: flex;
@@ -241,8 +241,8 @@
 
   /* dark highlight / CTA (Call to Action) box */
   &__highlight {
-    background-color: var(--ark-highlight-bg);
-    color: var(--ark-highlight-text);
+    background-color: var(--arka-highlight-bg);
+    color: var(--arka-highlight-text);
     padding: 1.25rem 1.5rem;
     margin: 1.5rem 0;
     line-height: 1.6;
@@ -253,14 +253,14 @@
   }
 
   &__highlight a {
-    color: var(--ark-highlight-link);
+    color: var(--arka-highlight-link);
     text-decoration: underline;
     text-underline-offset: 0.12em;
   }
 
   &__highlight a:hover,
   &__highlight a:focus {
-    color: var(--ark-highlight-link);
+    color: var(--arka-highlight-link);
     text-decoration-thickness: 2px;
   }
 
@@ -276,7 +276,7 @@
   .wp-caption-text {
     display: table-caption;
     caption-side: bottom;
-    color: var(--ark-caption-color);
+    color: var(--arka-caption-color);
     font-size: 1.1rem;
     line-height: 1.45;
     font-style: italic;
@@ -296,7 +296,7 @@
 
   /* footer */
   &__footer {
-    color: var(--ark-color-text);
+    color: var(--arka-color-text);
   }
 }
 

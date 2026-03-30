@@ -13,7 +13,7 @@ by {{ site.num_ark_orgs }}+ orgs.
 
 <!--more-->
 
-{% include content/section.html do="start" color="main" label="Introduction to ARKs" %}
+{% include content/section.html do="start" color="warm" label="Introduction to ARKs" %}
 
 Archival Resource Keys (ARKs) serve as *persistent identifiers*, or stable,
 trusted references for information objects. Among other things, they aim to be
@@ -35,7 +35,7 @@ physical, or abstract.
   description="Some things that have ARKs — an article, violin, genealogy, painting, book, sports photo, and plant specimen — assigned by the Louvre, Smithsonian Institution, Internet Archive, California Digital Library, and FamilySearch."
 %}
 
-{% include content/section.html do="changeto" color="alt" label="ARKs compared to DOIs, URNs, and Handles" %}
+{% include content/section.html do="changeto" color="cool" label="ARKs compared to DOIs, URNs, and Handles" %}
 
 ARKs are similar to DOIs, URNs, and Handles. All of them
 {: .arka__tertiary}
