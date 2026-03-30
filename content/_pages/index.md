@@ -13,8 +13,7 @@ by {{ site.num_ark_orgs }}+ orgs.
 
 <!--more-->
 
-{% include content/section.html do="start" color="main" label="Introduction to
-ARKs" %}
+{% include content/section.html do="start" color="main" label="Introduction to ARKs" %}
 
 Archival Resource Keys (ARKs) serve as *persistent identifiers*, or stable,
 trusted references for information objects. Among other things, they aim to be
