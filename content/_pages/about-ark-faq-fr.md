@@ -11,6 +11,8 @@ française du document [ARK Identifiers FAQ](/about/ark-faq-en/).
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 * TOC
 {:toc}
 
@@ -562,3 +564,5 @@ En règle générale, les services basés sur des formats d’identifiant sont c
 
 [static map]: ../assets/images/pages/community/arkamap202407.png
 [zoomable map]: {{ site.map_ark_orgs }}
+
+{% include content/section.html do="end" %}

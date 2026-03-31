@@ -4,6 +4,11 @@ permalink: /naan/stats/
 published: true
 ---
 
+Hourly updated snapshot of ARK organizations and distribution of local reslover
+top-level domains.
+
+<!--more-->
+
 <style>
 .tooltip {
   position: absolute;
@@ -28,6 +33,8 @@ published: true
 </style>
 
 <script src="https://d3js.org/d3.v7.min.js" integrity="sha384-CjloA8y00+1SDAUkjs099PVfnY2KmDC2BZnws9kh8D/lX1s46w6EPhpXdqMfjK6i" crossorigin="anonymous"></script>
+
+{% include content/section.html do="start" color="cool" label="XXX" %}
 
 Every ARK organization has a [Name Assigning Authority Number] (NAAN) listed in
 the public [NAAN registry]. Usually the NAAN representing a Name Assigning
@@ -394,3 +401,5 @@ fetch(naan_registry_url)
 [Name Assigning Authority Number]: ark-naans-and-systems.md
 [NAAN request form]: {{ site.naan_form_url }}
 [NAAN registry]: {{ site.list_ark_orgs }}
+
+{% include content/section.html do="end" %}

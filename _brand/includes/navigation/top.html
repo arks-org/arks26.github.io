@@ -1,38 +1,56 @@
-    <nav class="arka__navbar navbar navbar-expand-md border-top border-bottom border-dark-subtle">
-      <div class="container">
-        <a href="{{ site.baseurl }}" class="navbar-brand d-md-none">
-          <svg class="text-brand icon-lg arka__logo">
-                <title>{{ site.title }}</title>
-                <use href="#icon-ark"></use>
-          </svg>
-          {{ site.title }}
-        </a>
-        <button class="navbar-toggler" 
-               type="button" 
-               data-bs-toggle="collapse" 
-               data-bs-target="#navbar-content" 
-               aria-controls="navbar-content" 
-               aria-expanded="false" 
-               aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" 
-             id="navbar-content">
-          <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-uppercase">
-            {% for item in site.data.navigation.main_tree %}
-              {% if item.link contains "http" %}
-                {% assign url = item.link %}
+{% comment %}
+  The prefix variable is constructed to match the first segment of the URL
+  path. For example, if the URL is "/docs/getting-started/", prefix will be
+  "/docs/". This allows us to determine which navigation item should be
+  marked as active based on the current page's URL. Special case for HOME.
+{% endcomment %}
+
+{% assign prefix = page.permalink | remove_first: "/" | split: "/" | first | prepend: "/" | append: "/" %}
+{% if prefix == "//" %}
+  {% assign prefix = "/" %}
+{% endif %}
+{% assign starts_with = prefix | slice: 0, prefix.size %}
+
+<nav class="arka__navbar navbar navbar-expand-md border-top border-bottom border-dark-subtle">
+  <div class="container">
+    <a href="{{ site.baseurl }}" class="navbar-brand d-md-none">
+      <svg class="text-brand icon-lg arka__logo">
+            <title>{{ site.title }}</title>
+            <use href="#icon-ark"></use>
+      </svg>
+      {{ site.title }}
+    </a>
+    <button class="navbar-toggler" 
+           type="button" 
+           data-bs-toggle="collapse" 
+           data-bs-target="#navbar-content" 
+           aria-controls="navbar-content" 
+           aria-expanded="false" 
+           aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" 
+         id="navbar-content">
+      <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-uppercase">
+        {% for item in site.data.navigation.main_tree %}
+          {% if item.link contains "http" %}
+            {% assign url = item.link %}
+          {% else %}
+            {% assign url = item.link | prepend: site.baseurl %}
+          {% endif %}
+          <li class="nav-item">
+            <a
+              {% if starts_with == item.link %}
+                class="nav-link active text-brand" aria-current="page"
               {% else %}
-                {% assign url = item.link | prepend: site.baseurl %}
+                class="nav-link"
               {% endif %}
-              <li class="nav-item">
-                <a class="nav-link {% if page.url == item.link %}active text-brand" aria-current="page"{% else %}"{% endif %}
-                   href="{{ url }}">
-                {{ item.text }}
-                </a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </nav>
+                href="{{ url }}">
+              {{ item.text }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -165,3 +165,5 @@ developing an ARK system.
 [More about ARK shoulders]: about-shoulders.md
 [Testing ARKs with N2T]: about-testing-arks.md
 [ARK implementation best practices]: about-best-practices.md
+
+{% include content/section.html do="end" %}

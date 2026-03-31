@@ -12,6 +12,8 @@ that extend that registered ARK with suffixes.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 Suffix Passthrough (SPT) is a feature that lets you add any suffix to an
 identifier, and when a user selects ("clicks on") the identifier, the suffix is
 added to the end of the identifier's location (target) URL. It dramatically
@@ -128,3 +130,5 @@ into your browser's location field and appending (no spaces) a "search
 term" suffix of your choice.
 
 [1]: {{ site.baseurl }}/assets/images/share/learn_spt_in_action.gif
+
+{% include content/section.html do="end" %}

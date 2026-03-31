@@ -11,4 +11,8 @@ Email us.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 To get in touch, please email us at {{ site.contact.email }}.
+
+{% include content/section.html do="end" %}

@@ -11,6 +11,8 @@ NAANs, resolving ARKs, and updating NAAN registry entries.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 ## ARK namespace overview
 
 ARK namespaces work much the same way that all namespaces work. Given a prefix
@@ -234,3 +236,5 @@ relationship, there is no impediment to taking your NAAN with you.
 [form to request a shoulder under a shared NAAN]: {{ site.shoulder_form_url }}
 [online form]: {{ site.naan_form_url }}
 [sample policy]: https://ark.bnf.fr/ark:12148/bpt6k2102478.policy
+
+{% include content/section.html do="end" %}

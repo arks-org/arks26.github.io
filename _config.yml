@@ -34,6 +34,7 @@ ark_spec_current: "https://datatracker.ietf.org/doc/draft-kunze-ark/"
 naan_form_url: "https://docs.google.com/forms/d/e/1FAIpQLSf_847hNXtLGikR-XeDy1uT1AKd24DpHnt5UQh2i8ORRu7u-w/viewform"
 shoulder_form_url: "https://docs.google.com/forms/d/10J2VxsaeQG-IpkqZ6wpqAKqt8hYnMSf4bxdL8ktI-to/"
 
+wg_wikis: "https://github.com/arks-org/arks.github.io/wiki"
 naan_registry_txt: "https://cdluc3.github.io/naan_reg_priv/naan_registry.txt"
 naan_registry_json: "https://cdluc3.github.io/naan_reg_priv/naan_records.json"
 shoulder_registry_txt: "https://cdluc3.github.io/naan_reg_priv/shoulder_registry.txt"

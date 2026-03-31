@@ -13,6 +13,8 @@ community environment.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 We value the participation of each member of the ARK (Archival Resource Key)
 community. For the purposes of this document, the community includes the
 working groups sustaining the ARK infrastructure (eg, arks.org,
@@ -228,3 +230,5 @@ of Conduct licenses of these two source documents.
 [ARKA Advisory Group]: mailto:arka-advisory-group@googlegroups.com
 [Contributor Covenant]: https://www.contributor-covenant.org/version/2/1/code_of_conduct/
 [Dryad Code of Conduct]: https://datadryad.org/stash/code_of_conduct
+
+{% include content/section.html do="end" %}

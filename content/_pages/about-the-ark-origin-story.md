@@ -12,6 +12,8 @@ persistence. Decentralized, open source, metadata linking.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 By 2001 there were four major persistent identifier (PID) types, so why was it
 necessary to create a fifth? The origin story of the fifth type, the Archival
 Resource Key (ARK), is adapted from [this interview in 2021].
@@ -153,3 +155,5 @@ Slide credit: Dominique Babini
 [Cool URIs don’t change]: https://www.w3.org/Provider/Style/URI
 [84% of peer-reviewed Latin American journals in 2014 were not indexed by Scopus or the Web of Science]: https://www.slideshare.net/Babini/coasp2014-dominique-babini-clacso
 [2]: ../assets/images/pages/about-the-ark-origin-story/image-1.png
+
+{% include content/section.html do="end" %}

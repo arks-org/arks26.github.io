@@ -12,6 +12,8 @@ advantages they offer in terms of cost, flexibility, metadata, and more.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 ## Reasons to use ARKs as compared to DOIs
 
 -   To keep costs down. While some ARK service providers exist, ARKs can be
@@ -203,3 +205,5 @@ checking, duplicate detection, report generation, and searching.
 [n2t.net]: https://n2t.net/
 [1]: https://n2t.net
 [apply for a URN namespace]: https://tools.ietf.org/html/rfc8141#section-6
+
+{% include content/section.html do="end" %}

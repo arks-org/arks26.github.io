@@ -12,6 +12,8 @@ Implementation options discussed.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 In selecting a shoulder format, do start with your NAAN and decide on a short,
 fixed extension that you will add to it. The extension should
 
@@ -76,3 +78,5 @@ a shoulder under one of the few shared NAANs (described under [namespaces]).
 [suffix passthrough]: {{ site.baseurl }}{{ site.spt_explained }}
 [ark:99152/p0]: https://n2t.net/ark:99152/p0
 [namespaces]: about-ark-namespaces.md
+
+{% include content/section.html do="end" %}

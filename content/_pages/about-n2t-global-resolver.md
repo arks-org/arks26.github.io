@@ -11,6 +11,8 @@ various types, not just ARKs. Built on open principles.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 ## How N2T Works
 
 When a resolution request comes in from the general public, N2T looks up the
@@ -63,3 +65,5 @@ ARKs but is also regularly used by organizations that mint Handles.
 [identifiers.org]: https://identifiers.org/
 [1]: https://lh3.googleusercontent.com/vZvC9P_CZkA7M0sos-lvF6QEt50rbzpZmu__eW3wIYtfw6ldRJu74Ze92zQohHHftmgXBisE4VzKUFCJMgRvKfOrornPKzmrhLzXhaO4ZHCafV4L-30KhjbmbOURLf7zD4rOJSst
 [Noid]: {{ site.baseurl }}/resources/noid/
+
+{% include content/section.html do="end" %}

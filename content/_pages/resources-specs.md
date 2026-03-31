@@ -1,6 +1,6 @@
 ---
 title: Technical specifications
-permalink: /specs/
+permalink: /resources/specs/
 pid: 1183
 date: 2021-07-13T22:55:39+00:00
 published: true
@@ -10,6 +10,8 @@ Technical specifications for ARKs, ARK services, persistence statements, data
 models, inflections, and applications continue to evolve.
 
 <!--more-->
+
+{% include content/section.html do="start" color="cool" label="Specifications" %}
 
 ARK services, persistence statements, data models, inflections, and
 applications continue to evolve.
@@ -29,3 +31,5 @@ development, or incomplete.
 [The ARK Identifier Scheme (latest version)]: https://datatracker.ietf.org/doc/draft-kunze-ark/
 [The ARK Identifier Scheme V39]: ../assets/documents/2024/ark_spec_39.pdf
 [1]: ../assets/images/pages/specs/spectacles.jpg
+
+{% include content/section.html do="end" %}

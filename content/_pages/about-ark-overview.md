@@ -11,6 +11,8 @@ for various objects, and their role in stable linking and access.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 ## What ARKs are and why you would use them
 
 Archival Resource Key (ARK) identifiers are persistent URLs designed to
@@ -195,3 +197,5 @@ Given how little the schemes do for you, when choosing one you’ll likely want
 to consider factors such as cost, risk, and openness.
 
 [10 persistent myths about persistent identifiers]: ../_posts/2021-01-19-ten-persistent-myths-about-persistent-identifiers.md
+
+{% include content/section.html do="end" %}

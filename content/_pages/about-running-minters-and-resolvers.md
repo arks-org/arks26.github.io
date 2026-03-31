@@ -10,6 +10,8 @@ Creating & Managing ARKs: Use alphanumerics, inert hyphens. Opt for opaque ident
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 ## Minting ARK name strings
 
 You are free to create ARK name strings as you wish, provided you use only
@@ -199,3 +201,5 @@ how you advertise them.
 [UUID]: https://en.wikipedia.org/w/index.php?title=Universally_unique_identifier&oldid=906541334
 [ARK software tools and services]: resources.md
 [n2t.net]: https://n2t.net/
+
+{% include content/section.html do="end" %}

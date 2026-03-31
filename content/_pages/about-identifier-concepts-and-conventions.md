@@ -12,6 +12,8 @@ ARKetype.ch.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 This document specifies common identifier-related terms, conventions, and
 practices as observed at services such as N2T.net, EZID.cdlib.org, and
 ARKetype.ch.
@@ -287,3 +289,5 @@ such as ‘1’ for ‘l’ and ‘0’ for ‘O’.
 [https://n2t.net]: https://n2t.net/
 [Noid]: {{ site.baseurl }}/resources/noid
 [here]: about-running-minters-and-resolvers.md
+
+{% include content/section.html do="end" %}

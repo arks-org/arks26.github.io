@@ -1,9 +1,22 @@
 <figure class="arka__figure">
-  <img style="display: block; max-width: 100%; height: auto;"
-       src="{{ site.baseurl }}{{ include.url }}"
-       alt="{{ include.description | strip_html }}" />
+
+  {% if include.link != nil %}
+    <a href="{{ include.link }}" target="_blank" rel="noopener">
+  {% endif %}
+
+      <img style="display: block; max-width: 100%; height: auto;"
+           src="{{ site.baseurl }}{{ include.url }}"
+           alt="{{ include.description | strip_html }}" />
+
+  {% if include.link != nil %}
+    </a>
+  {% endif %}
+
+  {% if include.nocaption == nil %}
   <figcaption class="arka__caption">
     {{ include.description | markdownify }}
   </figcaption>
+  {% endif %}
+
 </figure>
 

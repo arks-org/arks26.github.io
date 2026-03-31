@@ -21,10 +21,14 @@ the open ARK infrastructure, which consists of standards, best practices, the
 [working groups] (Outreach, Technical, NAAN Registry, Advisory) and an
 [Archival Resource Key Community Code of Conduct].
 
-| [![][1]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][2] |
-|:--:|
-| _Global distribution of over {{ site.num_ark_orgs }} ARK organizations._ |
-| |
+{% capture map_caption %}
+  Global distribution of over {{ site.num_ark_orgs }} ARK organizations.
+{% endcapture %}
+{% include content/image.html
+  url="/assets/images/pages/community/arkamap202407.png"
+  description=map_caption
+  link="https://www.google.com/maps/d/u/0/edit?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM&usp=sharing"
+%}
 
 The ARK Alliance emerged from a [collaboration] between the California Digital
 Library and DuraSpace/LYRASIS. Launched in 2018, it has gained the support of
@@ -152,7 +156,7 @@ work of the ARK Alliance] and have attracted support from the following
 [enquête ARK]: https://survey.alchemer.com/s3/6168001/ARK-Alliance-Survey-French
 [interest in helping with the work of the ARK Alliance]: https://docs.google.com/forms/d/15bhmP5Z0aOLaTWfXKK0TBTJCOAXuT30hIzfhij-D_oM/viewform?edit_requested=true
 [Contact us]: contact-us.md
-[working groups]: community-groups.md
+[working groups]: {{ site.baseurl }}/community/groups/
 [{{ site.num_ark_orgs }} organizations]: https://cdluc3.github.io/naan_reg_priv/
 [online request form]: {{ site.naan_form_url }}
 [online news form]: https://docs.google.com/forms/d/1e7GvJYvsMd7Qm_LdgkVaUB96dVzeou85f0VbhA4BsSs
@@ -173,3 +177,5 @@ work of the ARK Alliance] and have attracted support from the following
 [Princeton University Libraries]: https://library.princeton.edu/libraries
 [Periodo]: https://perio.do/
 [YAMZ]: https://yamz.net/
+
+{% include content/section.html do="end" %}

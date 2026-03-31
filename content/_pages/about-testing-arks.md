@@ -12,6 +12,8 @@ registry for N2T resolution.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 Test ARKs should be deleted regularly or else users will get used to them
 being there and they may become attached to them. The longer an identifier is
 in place the harder it can be to withdraw it. For example, the EZID system
@@ -51,3 +53,5 @@ it listed in the [shared NAAN shoulders registry]. That means filling out an
 
 [shared NAAN shoulders registry]: {{ site.shoulder_registry_txt }}
 [online shoulder request form]: {{ site.shoulder_form_url }}
+
+{% include content/section.html do="end" %}

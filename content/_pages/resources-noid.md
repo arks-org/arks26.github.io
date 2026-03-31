@@ -11,6 +11,8 @@ identifiers (NOID).
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 Have you ever noticed how some of the most "mission critical" identifiers in your daily life are numbers? How often do you use
 
 * a driver's license number,
@@ -88,3 +90,5 @@ The above represents a simplified taste of the complex issues around opaque iden
 
 * PSU: [Ruby](https://github.com/microservices/noid)
 
+
+{% include content/section.html do="end" %}

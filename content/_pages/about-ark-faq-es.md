@@ -10,6 +10,8 @@ Preguntas frecuentes y respuestas sobre ARK.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 * TOC
 {:toc}
 
@@ -559,3 +561,4 @@ En contraste, el [resolvedor N2T (Name-to-Thing)](https://n2t.net/) y la [interf
 [static map]: ../assets/images/pages/community/arkamap202407.png
 [zoomable map]: {{ site.map_ark_orgs }}
 
+{% include content/section.html do="end" %}

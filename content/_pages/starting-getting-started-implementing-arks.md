@@ -104,8 +104,6 @@ Read more about:
     statements)
 -   [Service providers]
 
-{% include content/section.html do="end" %}
-
 [NAAN request form]: {{ site.naan_form_url }}
 [General identifier concepts and conventions]: about-identifier-concepts-and-conventions.md
 [ARK features]: about-ark-features.md
@@ -119,3 +117,5 @@ Read more about:
 [Running minters and resolvers]: about-running-minters-and-resolvers.md
 [ARK Implementation best practices]: about-best-practices.md
 [Service providers]: resources.md
+
+{% include content/section.html do="end" %}

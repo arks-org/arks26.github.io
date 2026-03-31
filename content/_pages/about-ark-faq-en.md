@@ -10,6 +10,8 @@ Frequently Asked Questions and Answers about ARKs (English version).
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 * TOC
 {:toc}
 
@@ -606,3 +608,5 @@ Attachments:
 
 [static map]: ../assets/images/pages/community/arkamap202407.png
 [zoomable map]: {{ site.map_ark_orgs }}
+
+{% include content/section.html do="end" %}

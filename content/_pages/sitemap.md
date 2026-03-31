@@ -17,3 +17,5 @@ current pages and downloadable files.
 {% include content/sitemap-list.html %}
 
 {% include content/section.html do="end" %}
+
+{% include content/section.html do="end" %}

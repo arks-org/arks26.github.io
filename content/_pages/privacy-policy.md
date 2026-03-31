@@ -10,6 +10,8 @@ Our privacy policy.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 ## Who we are
 
 Our website address is: <https://arks.org>.
@@ -108,3 +110,5 @@ Visitor comments may be checked through an automated spam detection service.
 ### What automated decision making and/or profiling we do with user data
 
 ### Industry regulatory disclosure requirements
+
+{% include content/section.html do="end" %}

@@ -11,6 +11,8 @@ in Paris at the National Library of France (BnF), March 22 and June 11,
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 # **ARK Experts Day @ National Library of France (BnF),March 22nd 2018**
 
 \[ Discussions are *noted in italics* to distinguish them from the original agenda. Notes are mostly unedited. \]
@@ -296,3 +298,5 @@ done soon?)
 *JK: I hope the outreach group can direct the building out of* [*arks.org*](http://arks.org/) *(currently pointing to* [*n2t.net*](http://n2t.net/)*).*  
 5. Around the room:  
 *Confirmed that everyone is ok to wait for the AitO working groups and merge our efforts with theirs.*  
+
+{% include content/section.html do="end" %}

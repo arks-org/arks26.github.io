@@ -14,6 +14,8 @@ and policy statements.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 The availability of the features below is based on what system you’re using to
 resolve ARKs, so may vary whether you’re using an ARK service provider or
 running your own Noid installation. ARKs are designed to support all of the
@@ -208,3 +210,5 @@ resource and before you’ve invested in describing it.
 [Dublin Kernel]: https://dublincore.org/groups/kernel/spec/
 [N2T]: https://n2t.net/
 [statements]: https://doi.org/10.5334/dsj-2017-039
+
+{% include content/section.html do="end" %}

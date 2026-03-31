@@ -11,6 +11,8 @@ systems, metadata management, and N2T resolver.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 Whether you use an ARK service provider, a plug-in or microservice, or build
 your own ARK support, there are multiple systems that play a part in making
 ARKs persist. The following systems are likely to be part of your ARK
@@ -213,3 +215,5 @@ can [learn more about suffix passthrough].
 [Running ARK Minters and Resolvers]: about-running-minters-and-resolvers.md
 [ARK features]: about-ark-features.md
 [learn more about suffix passthrough]: {{ site.baseurl }}{{ site.spt_explained }}
+
+{% include content/section.html do="end" %}

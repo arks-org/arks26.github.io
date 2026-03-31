@@ -70,11 +70,11 @@ joining one of its [working groups].
   description="Working on the ARK. From a 1401 manuscript page, illuminated by Johannette Ravenelle, that itself has an ARK identifier: <[https://n2t.net/ark:12148/btv1b8449691v/f29](https://n2t.net/ark:12148/btv1b8449691v/f29)> (source gallica.bnf.fr, National Library of France)."
 %}
 
-{% include content/section.html do="end" %}
-
 [{{ site.num_ark_orgs }} organizations]: community.md
 [1]: ../assets/images/pages/index/ark_things.png
 [suffix passthrough]: about-ark-naans-and-systems.md#n2t-feature-suffix-passthrough
 [this request form]: {{ site.naan_form_url }}
-[working groups]: community-groups.md
+[working groups]: {{ site.baseurl }}/community/groups/
 [2]: ../assets/images/pages/index/cropped-ARKsInTheOpen-1536x957.jpg
+
+{% include content/section.html do="end" %}

@@ -10,6 +10,8 @@ Frequently Asked Questions and Answers about ARK Shoulders
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 * TOC
 {:toc}
 
@@ -82,3 +84,5 @@ As mentioned, to implement a shoulder under your *own* NAAN requires no special 
 
 Like NAANs, shoulders under shared NAANs are portable. If your organization transitions into or out of a vendor relationship, there is no impediment to taking your shoulder with you.
 
+
+{% include content/section.html do="end" %}

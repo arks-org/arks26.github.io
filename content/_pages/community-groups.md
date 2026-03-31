@@ -1,6 +1,6 @@
 ---
-title: ARK Alliance Working Groups
-permalink: /community-groups/
+title: Community ARK Alliance Working Groups
+permalink: /community/groups/
 pid: 798
 date: 2021-01-23T17:36:24+00:00
 published: true
@@ -11,8 +11,17 @@ in joining.
 
 <!--more-->
 
-The ARK Alliance (ARKA) has working groups (WGs) focussed on general topic areas. Anyone may request to 
-join a working group by contacting one of its current members or writing to info@arks.org. The groups are introduced below.
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
+<div class="side-by-side" style="display: flex; align-items: center; gap: 2rem;" markdown="1">
+
+The ARK Alliance (ARKA) has working groups (WGs) focussed on general topic
+areas. Anyone may request to join a working group by contacting one of its
+current members or writing to info@arks.org. The groups are introduced below.
+
+[![ARK Alliance Working Groups logo]({{ site.baseurl }}/assets/images/share/arka_wg_logo.svg){: style="width: 50%"}]({{ site.wg_wikis }})
+
+</div>
 
 ---
 
@@ -89,7 +98,7 @@ for its supporting documents.
 1. Standardization. Update the ARK URI scheme registration with IETF and work with standards bodies (IETF, NISO, W3C, etc) to adopt the ARK spec.
 1. Design and review human- and machine-readable metadata formats to prescribe/recommend for implementers to respond to inflections such as ‘?info’.
 1. Global ARK resolution via N2A (the combined resolver n2t.net + arks.org). Guide the development and hosting of a replicated n2t.net-like resolution infrastructure.
-1. Measuring ARKs (e.g., counting ARKs). Work with the [Outreach Working Group](https://arks.org/community-groups/#outreach) to implement mechanisms (eg, surveys, APIs) to measure ARK usage/impact world-wide.
+1. Measuring ARKs (e.g., counting ARKs). Work with the [Outreach Working Group]({{ site.baseurl }}/community/groups/#outreach) to implement mechanisms (eg, surveys, APIs) to measure ARK usage/impact world-wide.
 1. Support the Outreach WG in a liaison with the IIIF community (e.g., guidelines for ARK assignment).
 1. Evolve the ARK spec for new use cases and applications.
 1. As needed, analyze or recommend new infrastructure opportunities, such as a common minting service, public metadata store, shared secondary resolver, NAAN testing app, etc.
@@ -179,7 +188,10 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 *   Romuald Verrier, French Ministry of Education
 *   Sefakor Ankora, ex-WACREN
 
-![][1]
+{% include content/image.html
+  url="/assets/images/pages/about-ark-naans-and-systems/NAAN_slice.jpg"
+  description="Tasty NAAN bread" nocaption="1"
+%}
 
 ---
 
@@ -221,3 +233,5 @@ The ARK Alliance Community Leaders are listed here.
 * Dave Vieglais
 
 [1]: {{ site.baseurl }}/assets/images/pages/about-ark-naans-and-systems/NAAN_slice.jpg
+
+{% include content/section.html do="end" %}

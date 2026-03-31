@@ -10,6 +10,8 @@ This calendar lists events relevant to the ARK community.
 
 <!--more-->
 
+{% include content/section.html do="start" color="cool" label="XXX" %}
+
 This calendar lists events relevant to the ARK community.
 
 ---
@@ -85,3 +87,5 @@ This calendar lists events relevant to the ARK community.
 | Designing for Digital 2021 (D4D) | 2021.02.22-25 | Virtual | Designing for Digital brings together UX professionals, web designers, managers, researchers, strategists, and librarians of all types to examine the current users experience of the library and design the future of libraries in a modern, digital world. | [Due December 1, 2020](http://designingfordigital.com/speaking-opportunities/) |     |
 {: .table .table-striped .table-hover }
 </div>
+
+{% include content/section.html do="end" %}

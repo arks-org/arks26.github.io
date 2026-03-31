@@ -12,7 +12,7 @@ A helpful list of resources, documentation, and services.
 
 {% include content/section.html do="start" color="cool" label="Basics" %}
 
-| **BASICS** <br/> &nbsp;•&nbsp; [The ARK Tutorial][17] introduces Archival Resource Keys in 30 minutes. <br/> &nbsp;•&nbsp; [NAAN form] to *get started* creating ARKs or to *update* your existing NAAN. <br/> &nbsp;•&nbsp; See the [current and evolving specifications] to keep up with the latest. <br/> &nbsp;•&nbsp; First ARK paper, [*Towards Electronic Persistence Using ARK Identifiers*], 2003. <br/> &nbsp;•&nbsp; [General identifier concepts and conventions], first articulated for ARKs. <br/> &nbsp;•&nbsp; [ARK Identifier Scheme specification]({{ site.ark_spec_current }}) for technical details. <br/> &nbsp;•&nbsp; The Archival Resource Key at [wikipedia]. <br/> &nbsp;•&nbsp; ARK logos, no background, PNG and SVG. &nbsp; ![][ARK logo PNG]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140" title="PNG logo; right-click and 'Save image as...'" alt="ARK logo, PNG format"} &nbsp;&nbsp; ![][ARK logo SVG]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140" title="SVG logo; right-click and 'Save image as...'" alt="ARK logo, SVG format"} &nbsp; | ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="400" width="500"} <br/> _The Mazarine Library, Paris, which assigns ARKs under <br/> the NAAN 61562 (photo by Marie-Lan Nguyen)._ |
+| **BASICS** <br/> &nbsp;•&nbsp; [The ARK Tutorial][17] introduces Archival Resource Keys in 30 minutes. <br/> &nbsp;•&nbsp; [NAAN form] to *start* creating ARKs or to *update* your existing NAAN. <br/> &nbsp;•&nbsp; See the [current and evolving specifications] to keep up with the latest. <br/> &nbsp;•&nbsp; First paper, [*Towards Electronic Persistence Using ARK Identifiers*], 2003. <br/> &nbsp;•&nbsp; [General identifier concepts and conventions], first articulated for ARKs. <br/> &nbsp;•&nbsp; [ARK Identifier Scheme specification]({{ site.ark_spec_current }}) for technical details. <br/> &nbsp;•&nbsp; The Archival Resource Key at [wikipedia]. <br/> &nbsp;•&nbsp; Logos, no background, PNG & SVG. &nbsp; ![][ARK logo PNG]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140" title="PNG logo; right-click and 'Save image as...'" alt="ARK logo, PNG format"} &nbsp;&nbsp; ![][ARK logo SVG]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140" title="SVG logo; right-click and 'Save image as...'" alt="ARK logo, SVG format"} &nbsp; | ![][1]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="400" width="500"} <br/> _The Mazarine Library, Paris, which assigns ARKs under <br/> the NAAN 61562 (photo by Marie-Lan Nguyen)._ |
 
 -   The [Arklet-Frick][] software package is the Frick Collection's enhanced
     version of an Internet Archive tool, which adds bulk operations, suffix
@@ -111,7 +111,7 @@ To get your software listed please [let us know] about it.
     2008-06-05, Mark Phillips. [slides][16]
 
 [NAAN form]: {{ site.naan_form_url }}
-[current and evolving specifications]: specs.md
+[current and evolving specifications]: ../resources/specs
 [*Towards Electronic Persistence Using ARK Identifiers*]: https://n2t.net/ark:13030/c7n00zt1z
 [General identifier concepts and conventions]: about-identifier-concepts-and-conventions.md
 [ARK logo PNG]: ../assets/images/share/arka_logo.png
@@ -169,3 +169,5 @@ To get your software listed please [let us know] about it.
 [English transcription]: ../assets/documents/2021/11/The-Covenant-of-the-ARK-en.pdf
 [16]: https://digital.library.unt.edu/ark:67531/metadc28359/
 [17]: https://youtu.be/-RkMGFCGRic
+
+{% include content/section.html do="end" %}
