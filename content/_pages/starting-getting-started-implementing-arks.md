@@ -1,6 +1,6 @@
 ---
 title: "Getting started"
-permalink: /about/getting-started-implementing-arks/
+permalink: /starting/
 pid: 816
 date: 2021-01-23T22:29:57+00:00
 published: true

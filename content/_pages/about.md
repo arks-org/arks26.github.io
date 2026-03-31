@@ -157,7 +157,7 @@ developing an ARK system.
 [Resolver feature: suffix passthrough]: about-ark-naans-and-systems.md#feature-suffix-passthrough
 [ARK features]: about-ark-features.md
 [Comparing ARKs, DOIs and other identifier systems]: about-comparing-arks-and-other-identifiers.md
-[Getting started: what to plan for as you implement ARKs]: about-getting-started-implementing-arks.md
+[Getting started: what to plan for as you implement ARKs]: {{ site.baseurl }}/starting
 [General identifier concepts and conventions]: about-identifier-concepts-and-conventions.md
 [Running minters and resolvers]: about-running-minters-and-resolvers.md
 [More about the N2T global resolver]: about-n2t-global-resolver.md

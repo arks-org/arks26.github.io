@@ -23,7 +23,7 @@
   --arka-radius-sm: 0.25rem;
   --arka-radius-md: 0.5rem;
 
-  // --arka-content-max-width: 980px;
+  --arka-content-max-width: 74rem;
 }
 
 /* Bootstrap override */
@@ -113,32 +113,32 @@
 
   /* breadcrumbs */
   &__breadcrumbs {
-    background-color: var(--arka-bg-warm);
-    padding: 0.85rem 0 0;
+    padding: 0.25rem 0 0.45rem;
     font-size: 0.88rem;
   }
-
+  
   &__breadcrumbs .breadcrumb {
-    margin-bottom: 0;
-    background: transparent;
+    margin: 0;
   }
-
-  &__breadcrumbs .breadcrumb-item,
-  &__breadcrumbs .breadcrumb-item.active {
+  
+  /* base text color */
+  &__breadcrumbs .breadcrumb-item {
     color: var(--arka-color-text);
   }
 
-  &__breadcrumbs .breadcrumb-item a {
+  /* links */
+  &__breadcrumbs a {
     color: var(--arka-color-link);
     text-decoration: none;
   }
-
-  &__breadcrumbs .breadcrumb-item a:hover,
-  &__breadcrumbs .breadcrumb-item a:focus {
+  
+  &__breadcrumbs a:is(:hover, :focus) {
     text-decoration: underline;
   }
-
+  
+  /* separator */
   &__breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
     color: #8a857a;
   }
 
@@ -169,7 +169,7 @@
     color: var(--arka-color-text);
     font-size: 1.25rem;
     line-height: 1.65;
-    // max-width: var(--arka-content-max-width);
+    max-width: var(--arka-content-max-width);
   }
 
   &__content h1 {
