@@ -11,7 +11,7 @@ in Paris at the National Library of France (BnF), March 22 and June 11,
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="Notes from 2018 ARK Summit" %}
 
 # **ARK Experts Day @ National Library of France (BnF),March 22nd 2018**
 

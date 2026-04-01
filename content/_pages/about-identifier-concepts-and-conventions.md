@@ -12,7 +12,7 @@ ARKetype.ch.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="General identifier concepts" %}
 
 This document specifies common identifier-related terms, conventions, and
 practices as observed at services such as N2T.net, EZID.cdlib.org, and

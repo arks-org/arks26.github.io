@@ -11,7 +11,7 @@ identifiers (NOID).
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="Nice opaque identifiers (NOID)" %}
 
 Have you ever noticed how some of the most "mission critical" identifiers in your daily life are numbers? How often do you use
 

@@ -12,7 +12,7 @@ that extend that registered ARK with suffixes.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="Suffix passthrough explained" %}
 
 Suffix Passthrough (SPT) is a feature that lets you add any suffix to an
 identifier, and when a user selects ("clicks on") the identifier, the suffix is

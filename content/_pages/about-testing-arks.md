@@ -6,13 +6,13 @@ date: 2021-01-23T23:09:05+00:00
 published: true
 ---
 
-ARK Testing: Best Practices. Delete test ARKs regularly. Quick test ARKs with
+ARK testing best practices. Delete test ARKs regularly. Quick test ARKs with
 your NAAN: ark:99999/9NNNNN\_. Shared NAAN 99999 for testing; list in
 registry for N2T resolution.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="Testing ARKs" %}
 
 Test ARKs should be deleted regularly or else users will get used to them
 being there and they may become attached to them. The longer an identifier is

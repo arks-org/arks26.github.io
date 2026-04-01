@@ -126,8 +126,8 @@ defaults:
       path: "" # an empty string here means all files in the project
       type: "pages"
     values:
-      # add/remove a value after colon to add/remove callout box on all pages
-      callout: "***Notice***: &nbsp; This site is undergoing changes for accessibility and usability."
+      # add/remove quoted value after colon to add/remove callout on all pages
+      callout:
   - scope:
       path: "assets/documents"
     values:

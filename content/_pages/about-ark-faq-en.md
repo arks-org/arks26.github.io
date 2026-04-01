@@ -10,10 +10,12 @@ Frequently Asked Questions and Answers about ARKs (English version).
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="FAQ table of contents" %}
 
 * TOC
 {:toc}
+
+{% include content/section.html do="changeto" color="warm" label="Basics" %}
 
 ## Basics
 
@@ -120,7 +122,9 @@ Below is the global distribution of [organizations registered to create ARKs]({{
 [![][static map]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][zoomable map]
 
 
-# Getting started
+{% include content/section.html do="changeto" color="cool" label="Getting started" %}
+
+## Getting started
 
 ### What do I need to create ARKs? {#creating}
 
@@ -224,7 +228,9 @@ No, the ARK identifier is not meant to be a Christian metaphor. "ARK" was chosen
 
 Our logo and acronym may evoke the story of Noah's Ark, which is shared by the Abrahamic faiths of Islam, Judaism, and Christianity, and we would be happy for the ARK identifier to be associated with a trustworthy vessel to help preserve precious things.
 
-# Beyond the basics
+{% include content/section.html do="changeto" color="warm" label="Beyond the basics" %}
+
+## Beyond the basics
 
 ### What is N2T? {#what-n2t}
 
@@ -310,7 +316,9 @@ That's the containment qualifier. There's only one other ARK qualifier, and it i
 
 because they differ only by the suffix .pdf or .html, it can be inferred that they identify two different forms of the same document.
 
-# ARK namespaces and sub-namespaces
+{% include content/section.html do="changeto" color="cool" label="ARK Namespaces" %}
+
+## ARK namespaces and sub-namespaces
 
 ### What is the purpose of the NAAN?
 
@@ -388,7 +396,9 @@ You can request a change to the registry entry for a NAAN related to your organi
 
 NAANs are portable. If your organization transitions into or out of a vendor relationship, there is no impediment to taking your NAAN with you.
 
-# ARKs and other identifiers
+{% include content/section.html do="changeto" color="warm" label="ARKs and other identifiers" %}
+
+## ARKs and other identifiers
 
 ### Why would I use ARKs compared to, for example, DOIs?
 
@@ -493,15 +503,17 @@ Generalizations about identifier types sometimes apply when resolution and manag
 
 The concrete differences that we experience, such as _metadata_, landing pages, and tool integration (eg, publishing tools), are not properties of identifier schemes per se, but properties of resolution, management, and citation services that various providers extend to or withhold from different identifier types. Those services are shaped in turn by communities of practice and by markets. Basic services are founded on a reliable database storing each identifier along with metadata elements (creator, title, date, redirection URL, etc) that describe the identified object. Extra services include link checking, duplicate detection, report generation, and searching.
 
-# From cradle to grave
+{% include content/section.html do="changeto" color="cool" label="From cradle to grave" %}
 
-## When in my workflow should I create ARKs?
+## From cradle to grave
+
+### When in my workflow should I create ARKs?
 
 At object birth, or even before. We sometimes name our babies before they're born, and we name and refer to objects in the conception stages, sometimes long before they bear fruit. Depending on how elaborate the planning may be, your unborn objects could have full-function ARKs that resolve to an appropriate surrogate and return rich metadata, including persistence statements.
 
 The only caveat is to be careful releasing (advertising) ARKs that have uncertain long term prospects. Some identifier management systems have features to help manage and resolve unreleased identifiers (eg, [EZID](https://ezid.cdlib.org) has a "reserved" status). The more people who know about an ARK, the harder it is to delete.
 
-## How is it that ARKs can be easy to delete?
+### How is it that ARKs can be easy to delete?
 
 If no one knows about an identifier but you, there's no harm in deleting or withdrawing it. Stepping back, an identifier is actually an assertion that a given string of characters is associated with specific thing. The fewer people you tell, the easier it is to scrap that assertion. If you create a URL and share it only with your closest colleagues, that is much easier to withdraw than if the URL appeared for a month on a public website, from which it was harvested by internet search engines. In contrast, it is hard to delete DOIs and Handles because once registered and made resolvable, they are effectively released to the world.
 

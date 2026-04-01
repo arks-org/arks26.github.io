@@ -14,7 +14,7 @@ and policy statements.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="Identifier features" %}
 
 The availability of the features below is based on what system you’re using to
 resolve ARKs, so may vary whether you’re using an ARK service provider or
@@ -78,6 +78,8 @@ mature over time:
 Unlike Crossref and DataCite DOIs, which require specific metadata (eg, see
 the [DataCite schema]), ARKs do not constrain any of these activities.
 Moreover the N2T.net resolver actually supports all of them.
+
+{% include content/section.html do="changeto" color="warm" label="Metadata schemas" %}
 
 ### **Metadata schemas**
 
@@ -167,6 +169,8 @@ the ARK domain under the NAAN 13030 and according to the following principles:
 
 Institutions that generate ARKs may want to follow similar principles or
 develop their own assignment policies.
+
+{% include content/section.html do="changeto" color="cool" label="Deleting ARKs" %}
 
 ## Deleting ARKs
 

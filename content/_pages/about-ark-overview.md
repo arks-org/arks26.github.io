@@ -11,7 +11,7 @@ for various objects, and their role in stable linking and access.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="Why use ARKs" %}
 
 ## What ARKs are and why you would use them
 

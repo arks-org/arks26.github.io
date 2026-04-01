@@ -11,7 +11,7 @@ systems, metadata management, and N2T resolver.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="Role of the NAAN" %}
 
 Whether you use an ARK service provider, a plug-in or microservice, or build
 your own ARK support, there are multiple systems that play a part in making

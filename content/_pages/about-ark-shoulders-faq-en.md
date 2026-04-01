@@ -10,7 +10,7 @@ Frequently Asked Questions and Answers about ARK Shoulders
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="ARK shoulders FAQ" %}
 
 * TOC
 {:toc}

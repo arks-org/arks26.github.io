@@ -6,12 +6,12 @@ date: 2021-01-23T23:05:29+00:00
 published: true
 ---
 
-N2T global resolver: Redirects identifiers to forwarding links. Resolves
+The N2T global resolver redirects identifiers to forwarding links. Resolves
 various types, not just ARKs. Built on open principles.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="N2T for resolving ARKs and other identifiers" %}
 
 ## How N2T Works
 

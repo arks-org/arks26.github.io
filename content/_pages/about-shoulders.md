@@ -6,13 +6,13 @@ date: 2021-01-23T23:07:47+00:00
 published: true
 ---
 
-ARK Shoulder Selection: Best Practices. Choose short, unique extension with
+ARK shoulder best practices. Choose short, unique extension with
 lowercase letters and ending digit. Avoid '/', ensure compliance.
 Implementation options discussed.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="Introduction to ARK shoulders" %}
 
 In selecting a shoulder format, do start with your NAAN and decide on a short,
 fixed extension that you will add to it. The extension should

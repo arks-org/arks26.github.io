@@ -11,7 +11,7 @@ in joining.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="Introducing ARK community and working groups" %}
 
 <div class="side-by-side" style="display: flex; align-items: center; gap: 2rem;" markdown="1">
 
@@ -83,7 +83,7 @@ is for documents supporting both the ARK community and the ARKA Outreach WG.
 *   Omo Oaiya, WACREN
 *   Sergio Santamarina, co-chair, University of José C Paz, Argentina
 
----
+{% include content/section.html do="changeto" color="warm" label="ARK technical working group" %}
 
 ## Technical Group {#technical}
 
@@ -133,7 +133,7 @@ features](https://github.com/arks-org/arks.github.io/wiki/WG-Background) common 
 *   Paul Walk, Antleaf Ltd
 *   Donny Winston, Polyneme LLC
 
----
+{% include content/section.html do="changeto" color="cool" label="ARK NAAN working group" %}
 
 ## NAAN Group {#naan}
 
@@ -193,7 +193,7 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
   description="Tasty NAAN bread" nocaption="1"
 %}
 
----
+{% include content/section.html do="changeto" color="warm" label="ARK advisory working group" %}
 
 ## Advisory Group {#ag}
 
@@ -219,7 +219,8 @@ for its supporting documents.
 Guided by the Mozilla Foundation's Open Leadership Framework, LYRASIS and CDL constituted 
 this body by reaching out to those organizations that filled out our Expression of Interest form.
 
----
+{% include content/section.html do="changeto" color="cool" label="ARK community
+leaders" %}
 
 ## Community Leaders {#leaders}
 

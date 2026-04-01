@@ -6,11 +6,13 @@ date: 2020-10-07T19:50:23+00:00
 published: true
 ---
 
-Our privacy policy.
+Our privacy policy -- needs review.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="Privacy policy" %}
+
+This policy is undergoing review in April 2026.
 
 ## Who we are
 

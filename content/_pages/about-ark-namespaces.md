@@ -11,7 +11,7 @@ NAANs, resolving ARKs, and updating NAAN registry entries.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="ARK namespaces" %}
 
 ## ARK namespace overview
 

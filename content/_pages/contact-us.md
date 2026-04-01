@@ -11,7 +11,7 @@ Email us.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="How to contact us" %}
 
 To get in touch, please email us at {{ site.contact.email }}.
 

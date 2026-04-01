@@ -11,18 +11,20 @@ française du document [ARK Identifiers FAQ](/about/ark-faq-en/).
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="Sommaire de la FAQ" %}
 
 * TOC
 {:toc}
 
-# Les bases
+{% include content/section.html do="changeto" color="warm" label="Les bases" %}
 
-## Comment puis-je donner mon avis sur ce document ?
+## Les bases
+
+### Comment puis-je donner mon avis sur ce document ?
 
 En envoyant un e-mail à la [liste de diffusion ARK](https://framalistes.org/sympa/info/arks-forum-fr) ou en [nous contactant ici](mailto:{{ site.contact.email }}).
 
-## Que sont les ARK ?
+### Que sont les ARK ?
 
 Les ARK (*Archival Resource Key*) sont des **identifiants** de haute performance qui vous donnent accès à des choses et à des descriptions de ces choses. Par exemple, cet ARK,
 
@@ -32,7 +34,7 @@ vous donne accès à une thèse, et, en ajoutant '??' à la fin de l'ARK, devrai
 
         https://n2t.net/ark:67531/metadc107835/??
 
-## Pourquoi certaines ARK commencent-ils par « ark: » et d'autres par « ark:/ » ?
+### Pourquoi certaines ARK commencent-ils par « ark: » et d'autres par « ark:/ » ?
 
 Les ARK qui ont une barre oblique (« / ») juste après « ark: » sont des ARK classiques, et celles qui n'ont pas de barre oblique sont des ARK modernes. Un ARK fait référence à la même chose, avec ou sans barre oblique, et les deux formes sont supportées à perpétuité. Ainsi, ces deux ARK
 
@@ -45,7 +47,7 @@ identifieront toujours la même chose, la dernière forme (moderne) étant privi
 "/news/2025-07-28-documentation-change-from-classic-to-modern-arks/"
 | absolute_url }}).
 
-## Qu'est-ce qu'un identifiant ?
+### Qu'est-ce qu'un identifiant ?
 
 Sur Internet, un **identifiant** est une URL, ou une partie d'URL. Par exemple, cet identifiant ARK principal,
 
@@ -59,7 +61,7 @@ figure dans deux URL (*Uniform Resource Locators*, également appelés « liens 
 
 Les ARK sont plus particulièrement destinés à être des identifiants pérennes.
 
-## Qu'est-ce qu'un « identifiant pérenne » ?
+### Qu'est-ce qu'un « identifiant pérenne » ?
 
 On a estimé que la durée de vie moyenne d'un URL était de 44 jours. La fin de la vie d’un URL advient lorsque celui-ci se « rompt » ; il  vous retourne alors la redoutable erreur "404 Introuvable" que la plupart d’entre nous connaissent bien. Non seulement c’est agaçant, mais c’est en outre politiquement embarrassant lorsque l’on recherche des publications scientifiques financées sur fonds publics, et c’est un désastre culturel pour les bibliothèques, les archives, les musées et autres institutions mémorielles.
 
@@ -67,13 +69,13 @@ Parmi les multiples liens qui peuvent ou ont pu vous conduire à une chose, un *
 
 Les identifiants pérennes devraient continuer à fonctionner même lorsque les choses sont déplacées d'un site Web à un autre. Normalement, lorsque les choses sont déplacées, tous ceux qui ont déjà enregistré les anciens liens devraient être informés des nouveaux, ce qui est presque impossible. C'est alors qu'interviennent les **résolveurs** d'identifiants.
 
-## Qu'est-ce qu'un résolveur ?
+### Qu'est-ce qu'un résolveur ?
 
 Un résolveur est un site Web spécialisé dans la réorientation d'identifiants entrants (ceux initialement annoncés aux utilisateurs) vers les sites Web actuellement les mieux à même de les traiter. Ce transfert est généralement appelé « **résolution** » et une des étapes de ce processus de résolution la « **redirection** ».
 
 Pour qu'un résolveur fonctionne, son nom d'hôte \- *hostname* en anglais \- (« [n2t.net](http://n2t.net/) » ou « [ark.bnf.fr](http://ark.bnf.fr/) » dans les identifiants ci-dessus) doit être soigneusement choisi afin qu'il ne soit plus nécessaire de le changer. Les noms d’hôte des institutions mémorielles, dont certaines sont vieilles de plusieurs siècles, sont souvent de bons candidats pour devenir des résolveurs. On citera d’autres résolveurs, plus récents et plus connus : [n2t.net](http://n2t.net/) (le résolveur ARK), [identifiers.org](http://identifiers.org/), [doi.org](http://www.doi.org/), [handle.net](http://www.handle.net/) et [purl.org](https://archive.org/services/purl/).
 
-## À quoi peut-on attribuer un ARK ?
+### À quoi peut-on attribuer un ARK ?
 
 À toute chose numérique, physique ou abstraite. Cela inclut les choses qui n’existent pas encore mais auxquelles vous devez faire référence depuis des objets que vous créez ou prévoyez de créer, comme un lien depuis le brouillon d’un article vers un jeu de données en préparation, ou un lien depuis une lettre numérique archivée vers un instrument de recherche à créer. Attention, vous ne devriez attribuer des ARK qu’à des choses que vous possédez, contrôlez ou gérez. Attribuer des ARK à des choses que vous ne contrôlez pas est déconseillé car de tels identifiants sont généralement fragiles.
 
@@ -100,7 +102,7 @@ Vous trouverez ci-dessous une liste de choses qui reçoivent des ARK. Les nombre
 | Documents généalogiques (3 milliards, [FamilySearch](https://familysearch.org/)) Contenus d’éditeurs (100 millions, [Portico](https://www.portico.org/)) Publications scientifiques (22 millions, [INIST](https://www.inist.fr/)) Textes numérisés (20 millions, [Internet Archive](https://archive.org/)) Notices bibliographiques (15 millions, [catalogue général de la BnF](https://catalogue.bnf.fr/)) Objets muséaux (11 millions, bientôt 100 millions, [Bibliothèques de la Smithsonian Institution](https://library.si.edu/)) Documents publics de santé, la plupart issus de mesures d’établissement de preuves légales (14 millions, [Bibliothèques de l’UCSF](https://www.industrydocuments.ucsf.edu/)) Documents et objets numérisés (5 millions, [Gallica](https://gallica.bnf.fr/GallicaEnChiffres), BnF) Auteurs et universitaires liés à des sources historiques (4 millions, [SNAC](https://snaccooperative.org/)) Instruments de recherche et collections précieuses (4 millions, [Merritt](https://merritt.cdlib.org/)) Cartes de ressources (1,5 millions, [RMap Hub](https://rmap-hub.org/)) Ressources pédagogiques (1,1 million, [Université de l’Utah](https://lib.utah.edu/)) Vocabulaires contrôlés (9000, [Periodo](https://perio.do/), [YAMZ](https://yamz.net/)) des jeux de données, des journaux, des objets archéologiques, des êtres vivants, etc. | ![][image1]![][image2]![][image3]![][image4]![][image5]![][image6]![][image7]![][image8] |
 {% endcomment %}
 
-## Qui utilise les ARK ?
+### Qui utilise les ARK ?
 
 Difficile à dire car les ARK sont décentralisés, mais plus de 600 organisations enregistrées ont créé, selon leurs estimations, environ 3,2 milliards d’ARK. Vous trouverez des ARK utilisés comme permaliens dans
 
@@ -115,9 +117,11 @@ Voici la répartition globale des [organisations enregistrées comme attributric
 [![][static map]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][zoomable map]
 
 
-# Pour commencer
+{% include content/section.html do="changeto" color="cool" label="Pour commencer" %}
 
-##  De quoi ai-je besoin pour créer des ARK ? {#creating}
+## Pour commencer
+
+###  De quoi ai-je besoin pour créer des ARK ? {#creating}
 
 Tout d'abord, vous avez besoin d'un NAAN (numéro d'autorité nommante, ou *Name Assigning Authority Number* en anglais), qui est un numéro exclusivement réservé à votre organisation. Il doit apparaître dans chaque ARK attribué par votre organisation, juste après l'étiquette "ark:". Le NAAN de tous ces ARK
 
@@ -131,7 +135,7 @@ est **12148** ; il identifie de manière unique la Bibliothèque nationale de Fr
 
 L'obtention ou l'utilisation d'un NAAN est gratuite et vous pouvez en demander un en remplissant un [formulaire en ligne]({{ site.naan_form_url }}). Plus de 650 organisations (bibliothèques, archives, musées, facultés, agences gouvernementales, éditeurs scientifiques et pédagogiques, projets, etc.) ont un NAAN répertorié dans le [registre public NAAN]({{ site.list_ark_orgs }}).
 
-## Comment commencer à créer des chaînes de caractères destinées à devenir des ARK ?
+### Comment commencer à créer des chaînes de caractères destinées à devenir des ARK ?
     
 Vous êtes libre de créer des chaînes de caractère ARK à votre guise, à condition que vous n'utilisiez que des chiffres, des lettres (ASCII, donc sans aucun signe diacritique) et les caractères suivants :
 
@@ -153,7 +157,7 @@ Les ARK distinguent majuscules et minuscules, ce qui permet des identifiants plu
 
 Pour l'attribution, une stratégie courante consiste à tirer parti des identifiants hérités. Par exemple, un numéro de spécimen de papillon de musée, cd456f9\_87, pourrait être publié sous l’ARK ark:12345/cd456f9\_87. Certains identifiants hérités devront peut-être être modifiés compte tenu des restrictions de caractères ARK. La deuxième stratégie couramment utilisée consiste à créer des chaînes entièrement nouvelles pour vos ARK. Dans ce cas, il est important de considérer si elles doivent être totalement ou partiellement opaques, ou signifiantes.
 
-## Que sont les identifiants opaques ?
+### Que sont les identifiants opaques ?
 
 Les chaînes de caractères d'identifiants pérennes sont généralement **opaques** et révèlent délibérément peu de choses sur ce à quoi elles sont attribuées, car les identifiants non opaques ne vieillissent pas ou ne voyagent pas bien. Les noms d'organisations sont connus pour être transitoires, raison pour laquelle les NAAN sont des nombres opaques. Lorsque les dates et les titres sont corrigés, que les significations des mots évoluent (par exemple, d'anciens sigles innocents peuvent devenir offensants ou attentatoires), les chaînes de caractères censées être pérennes peuvent générer de la confusion ou poser un problème politique. La génération et l'attribution de chaînes de caractères complètement opaques comportent également des risques ; ainsi, des nombres attribués séquentiellement révèlent des informations sur leur date et les chaînes de caractères contenant des lettres peuvent générer fortuitement des mots (c'est pourquoi le répertoire de caractères recommandé ne comporte pas de voyelles).
 
@@ -172,7 +176,7 @@ Il n'est pas obligatoire que les ARK soient opaques, mais il est recommandé que
 
 Les chaînes de caractères opaques sont « muettes » et donc difficiles à gérer, c'est pourquoi les ARK ont été conçus pour être des identifiants « parlants ». Cela signifie que s'il existe des [métadonnées](#metadata) sur la ressource, un ARK qui se présente sur votre serveur suivi de [l'inflexion](#inflection) « ? » devrait pouvoir parler de lui-même.
 
-## Comment rendre le contenu du serveur accessible via les ARK ?
+### Comment rendre le contenu du serveur accessible via les ARK ?
 
 Tout d’abord, déterminez ce que sera l’expérience utilisateur lors de l’accès par vos ARK : une feuille de calcul, un PDF, une image, une page d’accueil affichant des métadonnées et plusieurs options ? Quel que soit votre choix, prévoyez que votre serveur retourne des métadonnées si l’ARK arrivait suivi d’une [inflexion](#inflection) « ? ».
 
@@ -180,7 +184,7 @@ Pour le reste, résoudre des ARK revient à répondre à des URL. Normalement, l
 
 Une autre approche consiste à laisser votre serveur Web fonctionner en l’état et, au lieu de mettre à jour ses tables locales, de maintenir des tables de correspondance ARK/URL sur un résolveur distinct. Cette approche est adoptée par nombre d’éditeurs de logiciels et par les organisations maintenant leurs tables via le [service EZID](http://ezid.cdlib.org/) (qui est lié au résolveur [n2t.net](http://n2t.net/) et met à jour les tables de résolution de ce dernier).
 
-## Comment citer ou faire connaître un ARK ?
+### Comment citer ou faire connaître un ARK ?
 
 On préférera la forme URL (https ou http) de l’ARK. Par exemple : [https://n2t.net/ark:99166/w66d60p2](https://n2t.net/ark:99166/w66d60p2). Un ARK destiné à un usage externe est généralement publié (annoncé, diffusé…) de cette manière afin de constituer un **identifiant actionnable**. Si un affichage visuel plus compact est nécessaire, il doit être associé à un lien hypertexte. Par exemple :
 
@@ -190,7 +194,7 @@ Une décision importante consiste à déterminer si vos URI ARK utiliseront le n
 
 Quelle que soit la manière dont vous les publiez, la résolution de vos ARK via [N2T](https://n2t.net) est toujours possible.
 
-## Existe-t-il des outils et des services de gestion d’ARK ? {#tools}
+### Existe-t-il des outils et des services de gestion d’ARK ? {#tools}
 
  Voici [une liste partielle d’outils logiciels de gestion d’identifiants](https://coptr.digipres.org/Category:Persistent_Identification). Elle comprend notamment
 
@@ -207,7 +211,9 @@ Non, l'identifiant ARK n'est pas une métaphore chrétienne. « ARK » a été
 
 Notre logo et notre acronyme évoquent peut-être l'histoire de l'Arche de Noé, commune aux religions abrahamiques de l'islam, du judaïsme et du christianisme. Nous serions ravis que l'identifiant ARK soit associé à un récipient fiable pour préserver des objets précieux.
 
-# Pour aller plus loin
+{% include content/section.html do="changeto" color="warm" label="Pour aller plus loin" %}
+
+## Pour aller plus loin
 
 ### Qu'est-ce que N2T ? {#what-n2t}
 
@@ -229,7 +235,7 @@ Pour prendre en charge la création et la maintenance d'enregistrements d'identi
 
 Deuxièmement, même si N2T ne connaît rien d'un identifiant individuel, la résolution peut fonctionner grâce à un enregistrement de règle de routage stocké et déclenché par le type d'identifiant. N2T conserve plus de 3 500 enregistrements de règles régulièrement mis à jour à partir de plusieurs sources, notamment le registre NAAN, une base de données d'épaules ARK et DOI et un partenariat formel sur les identifiants compacts avec identifiers.org.
 
-## Si la plupart des ARK ont leur propre résolveur, pourquoi existe-t-il également un résolveur global pour les ARK ?
+### Si la plupart des ARK ont leur propre résolveur, pourquoi existe-t-il également un résolveur global pour les ARK ?
 
  La plupart des ARK sont créés par des organisations qui les publient en utilisant leur propre résolveur. Par exemple, cet ARK a été publié en spécifiant le résolveur [ark.bnf.fr](http://ark.bnf.fr/) :
 
@@ -239,7 +245,7 @@ Avoir à gérer et à maintenir son propre résolveur est la contrepartie d’un
 
       https://n2t.net/ark:12148/btv1b8449691v/f29
 
-## Mon organisation a son propre résolveur ARK \- dois-je me soucier de [N2T.net](http://n2t.net/) ?
+### Mon organisation a son propre résolveur ARK \- dois-je me soucier de [N2T.net](http://n2t.net/) ?
 
 Oui, et ce pour deux raisons principales. Tout d'abord, si vos ARK « à l'état sauvage » apparaissent sans votre le nom d'hôte de votre résolveur (c'est-à-dire, s'ils commencent par « ark: ... », ce qui n'est pas rare), la personne qui veut les utiliser n'est pas tenue de connaître le nom d'hôte : il lui suffit d'ajouter « [n2t.net](http://n2t.net/) » devant eux. Cela fonctionne car N2T connaît le nom d'hôte du résolveur.
 
@@ -247,13 +253,13 @@ Deuxièmement, si certaines organisations et leurs noms d'hôtes résolveurs ont
 
 Pour éviter de futurs désagréments, certaines organisations qui gèrent leurs propres résolveurs peuvent choisir d'emblée de préférer au nom de leur résolveur le nom de domaine [n2t.net](http://n2t.net/) pour la publication de leurs ARK.
 
-## Pourquoi le résolveur ARK global ([n2t.net](http://n2t.net/)) ne contient-il pas le mot « ARK » ?
+### Pourquoi le résolveur ARK global ([n2t.net](http://n2t.net/)) ne contient-il pas le mot « ARK » ?
 
 Lorsque le besoin d'un résolveur ARK global est apparu, les principes de base d'ouverture et de généricité ont dissuadé les concepteurs de créer un autre silo sur le modèle de DOI / Handle / PURL. Au lieu de quoi, le résolveur ARK a été conçu pour être un résolveur générique, non lié à un format, appelé N2T (Name-to-Thing), qui résout maintenant plus de 600 types d'identifiants, y compris les ARK, les DOI, les Handle, les PURL, les URN, les ORCID, les ISSN, etc. La résolution consiste à rechercher dans une table une chaîne de caractères d'identifiant, quel que soit son type, et à la rediriger au bon endroit.
 
 Les mêmes principes de base ont guidé la conception d'un outil antérieur appelé [noid](https://metacpan.org/pod/distribution/Noid/noid), conçu pour les ARK, mais également utilisé régulièrement par les organisations attribuant des Handle.
 
-## Que désigne-t-on par « transfert de suffixe » ?
+### Que désigne-t-on par « transfert de suffixe » ?
 
 En bref, le [transfert de suffixe]({{ site.baseurl }}{{ site.spt_explained }}) est une fonctionnalité de N2T. Supposons que vous n'ayez qu'un seul ARK enregistré, [https://n2t.net/ark:12345/6789](https://n2t.net/ark:12345/6789), et qu'il redirige vers la page du serveur Web,
 
@@ -273,11 +279,11 @@ Ce que fait le transfert de suffixe est de laisser votre ARK enregistré agir co
 
 Dans ce cas, le transfert de suffixe vous évite d'avoir à conserver des enregistrements pour trois pages supplémentaires. En fait, cela fonctionne pour un nombre illimité de pages.
 
-## Quelles sont les parties d'un ARK ?
+### Quelles sont les parties d'un ARK ?
 
 {% include content/anatomy3.html %}
 
-## Puis-je attribuer des ARK à des composantes d’une ressource qui a déjà un ARK ? {#already-ark}
+### Puis-je attribuer des ARK à des composantes d’une ressource qui a déjà un ARK ? {#already-ark}
 
 Oui, les ARK peuvent être attribués à n'importe quel niveau de **granularité**, tel qu'un manuscrit, des chapitres à l'intérieur, des sections de chapitre, des sous-sections, etc. Un ARK peut également être attribué à une chose qui contient d'autres choses. Dans les ARK, le caractère '/' est réservé pour aider l’utilisateur à découvrir la relation de composition. Par exemple, le premier objet ci-dessous contient le second :
 
@@ -293,7 +299,9 @@ ark:12148/btv1b8449691v/f29.html
 
 Comme ils ne diffèrent que par le suffixe .pdf ou .html, on peut en déduire qu'ils identifient deux formes différentes du même document.
 
-# Espaces de noms et sous-espaces de noms ARK
+{% include content/section.html do="changeto" color="cool" label="Espace de noms" %}
+
+## Espaces de noms et sous-espaces de noms ARK
 
 ### Quel est le but du NAAN ?
 
@@ -369,9 +377,11 @@ Vous pouvez demander une modification de l'entrée de registre d'un NAAN relatif
 * demander un NAAN supplémentaire, par exemple pour soutenir un nouveau groupe important d'ARK ou une nouvelle division organisationnelle ; et
 * transférer votre NAAN à une autre organisation qui poursuivra vos activités et l'utilisera ultérieurement.
 
-# ARK et les autres identifiants
+{% include content/section.html do="changeto" color="warm" label="Autres identifiants" %}
 
-## Pourquoi utiliser des ARK plutôt que des DOI, par exemple ?
+## ARK et les autres identifiants
+
+### Pourquoi utiliser des ARK plutôt que des DOI, par exemple ?
 
 * Pour réduire les coûts (voir [cette section](#diffs) pour plus de précision) ;  
 * Pour ne gérer que les métadonnées que vous voulez ;  
@@ -394,7 +404,7 @@ Vous pouvez demander une modification de l'entrée de registre d'un NAAN relatif
 * Pour accéder à des métadonnées adaptées et complètes via des [inflexions](#inflection)  
 * Pour s’intégrer aisément dans des API [IIIF](https://iiif.io/technical-details) en utilisant les [qualificatifs](#already-ark) ARK.
 
-## Qu'ont en commun ARK, DOI, Handle, PURL et URN ?
+### Qu'ont en commun ARK, DOI, Handle, PURL et URN ?
 
 Voici les principaux types (ou schémas) d'identifiants persistants.
 
@@ -413,7 +423,7 @@ Ils ont également une structure très similaire, comme le montrent les exemples
 Et ils ont tous peu d'effet sur la persistance. Voir [10 mythes persistants sur les identifiants persistants](https://n2t.net/ark:13030/c7gb1xh09).
 
 
-## Attendez, vous voulez dire que ARK, DOI, Handle, PURL et URN sont inutiles ?
+### Attendez, vous voulez dire que ARK, DOI, Handle, PURL et URN sont inutiles ?
 
 Non, ce serait une affirmation excessive. Mais remettons ces formats d’identifiant (types) en perspective :
 
@@ -425,9 +435,9 @@ Non, ce serait une affirmation excessive. Mais remettons ces formats d’identif
 
 Étant donné le peu de choses que ces formats font pour vous, lorsque vous en choisissez un, vous prendrez probablement en compte des facteurs tels que le coût, le risque et l'ouverture. 
 
-## En quoi les ARK diffèrent-ils des identifiants tels que les DOI, les Handle, les PURL et les URN ? {#diffs}
+### En quoi les ARK diffèrent-ils des identifiants tels que les DOI, les Handle, les PURL et les URN ? {#diffs}
 
-### **La réponse courte**
+#### **La réponse courte**
 
 Les ARK sont les seuls identifiants standards, non cloisonnés et non payants que vous pouvez enregistrer et utiliser en environ 48 heures. Les DOI, les Handle et les PURL nécessitent une résolution et d'autres services exigés par leurs systèmes centralisés respectifs (« silos »).
 
@@ -435,7 +445,7 @@ Cela ne veut pas dire que la permanence est gratuite. Rendre un identifiant pér
 
 Les ARK ont la particularité d'être décentralisés. Bien que l’on *puisse* obtenir des services de résolution d'un résolveur ARK global appelé [n2t.net](http://n2t.net), plus de 90% des ARK dans le monde ne l’utilisent pas comme résolveur. Plus de 650 organisations enregistrées à travers le monde ont créé par elles-mêmes environ 3,2 milliards d’ARK et, à l'instar des URL, personne n'a jamais payé de frais pour les créer. Bien sûr, les **maintenir** n'est pas gratuit. Conserver l’accès au contenu de manière pérenne sur le long terme, quel que soit le type d’identifiant, n’est jamais gratuit.
 
-### **D’autres différences entre ARK, DOI, Handle, PURL et URN**
+#### **D’autres différences entre ARK, DOI, Handle, PURL et URN**
 
 * ·Les pages d'accueil : les DOI de Crossref et DataCite aboutissent à des pages d'atterrissage conçues pour les éditeurs, mais pas directement aux objets qui vous tiennent à cœur. Les ARK peuvent en revanche aboutir *directement* aux objets qui vous tiennent à cœur, ce qui est pratique à la fois pour les machines et pour les utilisateurs, car cela ne demande pas à l’humain une étape supplémentaire de navigation pour des tâches courantes telles que  
   * ouvrir le fichier PDF d'un article en lecture,  
@@ -451,13 +461,13 @@ Les ARK ont la particularité d'être décentralisés. Bien que l’on *puisse* 
 * L'infrastructure de résolution URN envisagée n'a jamais été construite. Par conséquent, les URN sont actuellement résolus comme des URL et il n'y a pas de résolveur global et officiel d’URN en tant qu'URL. Pour vous inscrire afin de créer des URN, vous devez [demander un espace de nom URN](https://tools.ietf.org/html/rfc8141\#section-6).  
 * Les ARK possèdent des fonctionnalités uniques qui permettent d’[attribuer un identifiant à des stades précoces de développement de l’objet](#metadata) : les ARK peuvent être supprimés, naître sans métadonnées et exister avec toutes les métadonnées que vous souhaitez stocker.
 
-## Mais si les ARK peuvent être supprimés, comment peut-on leur faire confiance ?
+### Mais si les ARK peuvent être supprimés, comment peut-on leur faire confiance ?
 
 En réalité, cela rend les ARK plus fiables. La possibilité de supprimer est un élément essentiel d’une saine gestion de collections. Les types d'identifiants autres qu’ARK interdisent la suppression, en partant du principe que les personnes, lorsqu’elles sont invitées à intervenir, ne commettront pas d'erreur. Les personnes aux commandes d'un outil de gestion d'identifiants font régulièrement d’une simple inadvertance humaine une erreur à grande échelle, même au début de leur engagement. En rendant la correction difficile, nous condamnons les systèmes à traîner ces bourdes pour l’éternité.
 
 Bien qu’ils ne soient pas à l’abri de telles erreurs, les ARK ont le grand avantage de pouvoir être créés et supprimés dans l’ombre, en dehors de toute publication, ou d’engagement de conservation.
 
-## Un objet peut-il avoir à la fois un ARK et un DOI ?
+### Un objet peut-il avoir à la fois un ARK et un DOI ?
 
 Oui. Parfois, avoir deux identifiants est utile, bien que cela puisse devenir déroutant quand cela se produit souvent. Beaucoup de gens commencent par attribuer des ARK à chaque élément créé afin de disposer d'une référence stable dès le début, avant de savoir s'ils souhaitent le publier ni même le conserver.
 
@@ -465,7 +475,7 @@ L'objet et ses métadonnées évoluent conjointement, et pour le sous-ensemble d
 
 Pour gérer efficacement deux identifiants, il est recommandé de créer le DOI de manière à ce qu'il redirige vers l'ARK d'origine. Cela élimine non seulement la nécessité de mettre à jour la redirection DOI, mais maintient également l’ARK pérenne pour tous ceux qui l'ont précédemment enregistré ou marqué d'un signet.
 
-## Quand dois-je utiliser ARK plutôt que DOI, Handle, PURL ou URN ?
+### Quand dois-je utiliser ARK plutôt que DOI, Handle, PURL ou URN ?
 
 Il n'y a pas de réponse simple. La question des identifiants (non les choses, mais leurs noms) est complexe, alors si vous entendez des réponses simples ailleurs, [méfiez-vous des erreurs courantes](https://framalistes.org/sympa/arc/arks-forum-fr/2018-09/msg00000.html).
 
@@ -475,15 +485,17 @@ Certaines considérations spécifiques à un type d'identifiant s'expliquent par
 
 Les différences concrètes que nous remarquons, sur les **métadonnées**, les pages d’accueil et l’intégration d’outils (par exemple, les outils de publication), ne sont pas des propriétés des formats d’identifiants en soi, mais des propriétés de résolution, de gestion et de services de citation que divers fournisseurs étendent ou limitent. Ces services sont définis à leur tour par les communautés d’utilisateurs et de clients. Les services de base reposent sur une base de données fiable contenant chaque identifiant, ainsi que des éléments de métadonnées (créateur, titre, date, URL de redirection, etc.) décrivant l'objet identifié. Les services supplémentaires incluent la vérification des liens, la détection des doublons, la génération de rapports et la recherche.
 
-# Du berceau au tombeau
+{% include content/section.html do="changeto" color="cool" label="Du berceau au tombeau" %}
 
-## Quand dois-je créer des ARK dans mon processus de travail ?
+## Du berceau au tombeau
+
+### Quand dois-je créer des ARK dans mon processus de travail ?
 
 À la naissance de l'objet, ou même avant. Nous nommons généralement nos enfants avant leur naissance, et nous appelons et nous référons à des objets au stade de la conception, parfois longtemps avant qu'ils ne portent leurs fruits. Selon le niveau de précision de vos prévisions, vos objets à naître peuvent avoir des ARK fonctionnels qui fournissent un substitut approprié et renvoient des métadonnées riches, y compris des [déclarations de permanence](https://doi.org/10.5334/dsj-2017-039).
 
 La seule mise en garde consiste à être prudent lors de la publication d’ARK dont les perspectives à long terme sont incertaines. Certains systèmes de gestion d'identifiant possèdent des fonctionnalités permettant de gérer et de résoudre les identifiants non validés (par exemple, [EZID](https://ezid.cdlib.org/) dispose d’un statut « réservé »). Plus il y a de personnes qui connaissent un ARK, plus il est difficile de le supprimer.
 
-## Comment se fait-il que les ARK puissent être faciles à supprimer ?
+### Comment se fait-il que les ARK puissent être faciles à supprimer ?
 
 Si personne d’autre que vous ne connaît un identifiant, rien ne vous empêche de le supprimer ou de le retirer. Pour schématiser, un identifiant est en réalité l’affirmation qu'une chaîne de caractères donnée est associée à une chose spécifique. Moins vous en parlez, plus il est facile de supprimer cette affirmation. Si vous créez un URL et ne le partagez qu'avec vos collègues les plus proches, il sera beaucoup plus facile de le retirer que s’il apparaissait pendant un mois sur un site Web public, à partir duquel il aurait été collecté par les moteurs de recherche Internet. En revanche, il est difficile de supprimer les DOI et les Handle, car une fois enregistrés et résolus, ils sont effectivement diffusés dans le monde entier.
 
@@ -493,7 +505,7 @@ Cela peut surprendre, mais même s’ils sont plus largement diffusés, les ARK 
 
 Enfin, les gens commettent des erreurs. Des ARK, des DOI, des Handle, des PURL et des URN sont parfois diffusés par erreur et doivent être retirés. Lorsque cela se produit, la meilleure option du fournisseur consiste à résoudre l'identifiant retiré en donnant accès à une page « fantôme » qui explique et éventuellement présente des excuses pour le désagrément occasionné. Contrairement aux idées reçues, les identifiants pérennes n’offrent aucune garantie.
 
-## Pourquoi dit-on que les ARK sont adaptés à des objets dans un stade précoce de développement ? {#metadata}
+### Pourquoi dit-on que les ARK sont adaptés à des objets dans un stade précoce de développement ? {#metadata}
 
 On a besoin d'identifiants avant de savoir exactement à quel objet ils se réfèrent, ou s'ils font référence à quelque chose qui mérite d'être gardé. Un identifiant exigeant des métadonnées abouties ne peut pas être créé au début du développement car l'objet est mal connu. C’est pourquoi les créateurs d'objets attribuent presque toujours initialement des identifiants sans exigences de métadonnées, tels que des URL ou des ARK.
 
@@ -511,7 +523,7 @@ Comme l'objet lui-même, les éléments de métadonnées ont besoin de flexibili
 
 Contrairement aux DOI Crossref et DataCite, qui nécessitent des métadonnées spécifiques (voir, par exemple, le [schéma DataCite](https://schema.datacite.org/meta/kernel-4.2/)), les ARK n’exercent aucune contrainte sur ces activités. Mieux encore, le résolveur [N2T.net](https://n2t.net/) permet effectivement de les prendre toutes en compte.
 
-## Si les ARK ne les exigent pas, pourquoi se donner la peine de créer des métadonnées ?
+### Si les ARK ne les exigent pas, pourquoi se donner la peine de créer des métadonnées ?
 
 La création de métadonnées (informations supplémentaires associées à ou décrivant un objet) présente plusieurs avantages essentiels. Premièrement, quelle que soit la cible de l'ARK \- une page d'accueil ou un fichier \- les métadonnées fournissent aux utilisateurs des informations essentielles sur l'objet, telles que des références à des versions plus récentes, une date de création, une provenance, etc. Dans le cas des ARK, les métadonnées sont généralement accessibles via des [inflexions](#inflection).
 
@@ -521,7 +533,7 @@ Les métadonnées sont adaptées aux objets aboutis et sont beaucoup moins impor
 
 Cela n'est pas nécessairement cher. Les métadonnées créées à partir de zéro peuvent être coûteuses, mais elles sont généralement produites et gérées par des fournisseurs d'objets, auquel cas elles peuvent être exploitées efficacement pour les identifiants. Idéalement, pour une permanence maximale, les métadonnées principales (gérées par les fournisseurs d'objet) devraient être répliquées dans des systèmes indépendants afin qu'il soit difficile pour une personne d'altérer de manière indétectable les associations d'identifiants. Par exemple, les entrepôts d'objets numériques qui obtiennent des ARK et des DOI du service EZID stockent une copie de leurs métadonnées dans [EZID](https://ezid.cdlib.org/), qui en stocke une autre copie dans le résolveur [N2T.net](http://n2t.net/).
 
-## Quelles métadonnées sont recommandées pour les ARK ?
+### Quelles métadonnées sont recommandées pour les ARK ?
 
 La question des métadonnées est complexe pour tous les identifiants, pas seulement pour ARK. Il existe des milliers de normes selon les domaines et les types d’objets, la plupart d’entre elles se recoupant tout en se contredisant, et chacune d’elles est appliquée conformément aux pratiques locales de l’organisation avec différents niveaux de conformité. Le choix ou la création d'une spécification pour vos métadonnées dépend de facteurs tels que
 
@@ -532,7 +544,7 @@ La question des métadonnées est complexe pour tous les identifiants, pas seule
 
 Une interopérabilité fiable entre domaines peut s'avérer difficile, mais [Dublin Core](http://dublincore.org/), [DataCite](https://schema.datacite.org/), [Schema.org](https://yoast.com/json-ld/) et [Dublin Kernel](http://dublincore.org/groups/kernel/spec/) sont des spécifications de métadonnées standard à envisager pour une utilisation conjointe avec ARK.
 
-## Pourquoi est-ce que je vois des métadonnées ARK avec les termes « qui », « quoi », « quand », « où » ?
+### Pourquoi est-ce que je vois des métadonnées ARK avec les termes « qui », « quoi », « quand », « où » ?
 
  Les ARK ont été conçus pour identifier n'importe quoi, pas seulement des choses qui sont, par exemple, publiables ou achetables. Il n’est pas naturel de modéliser un fossile, un échantillon de tissu, un terme de vocabulaire ou Marie Curie comme si chacun avait un auteur, un titre, un éditeur, un copyright et un prix. Au lieu de quoi, depuis 2001, un ARK est généralement accompagné d’un noyau de métadonnées génériques de quatre éléments ([Dublin Kernel](https://www.dublincore.org/groups/kernel/spec/), inspiré de [Dublin Core (DC)](https://www.dublincore.org/)), suivi de tout autre élément de métadonnée (paire attribut / valeur) que le fournisseur souhaite donner. Ce noyau de métadonnées est structuré pour répondre aux questions suivantes : « qui ? », « quoi ? », « quand ? » et « où ? » sur l'expression ou le « récit » d'un objet :
 
@@ -547,7 +559,7 @@ Il y a beaucoup à dire sur les métadonnées et ARK (par exemple, sur l’appli
 * URL cible de la redirection, généralement stockée en tant qu'élément distinct des métadonnées  
 * éléments de [déclaration de permanence](https://datascience.codata.org/articles/10.5334/dsj-2017-039/), pour exprimer le niveau d'un engagement de conservation.
 
-## Qu'est-ce qu'une « inflexion » et en quoi diffère-t-elle de la « négociation de contenu » ? {#inflection}
+### Qu'est-ce qu'une « inflexion » et en quoi diffère-t-elle de la « négociation de contenu » ? {#inflection}
 
 Une inflexion est une désinence à la fin d'un mot qui exprime un changement de sens. Cela permet de définir un mot tel que « aller » sans définir également « allez » et « allons ». Pour un ARK qui mène à un objet, ajouter simplement un « ? » à la fin (« ? » est un exemple d'inflexion ARK) nous permet de demander des métadonnées sans avoir à définir un identifiant distinct pour les métadonnées de l'objet. Cette technique simple peut être utilisée par un humain avec un navigateur Web. Le résolveur N2T prend en charge les inflexions et la négociation de contenu.
 
@@ -555,7 +567,7 @@ La **négociation de contenu pour les métadonnées** est une technique logiciel
 
 Bien que les inflexions soient généralement associées aux ARK, elles ne leur sont pas réservées. Contrairement aux idées reçues, les identifiants ne font rien ; ce sont leurs résolveurs qui gèrent ou non des fonctionnalités. Ainsi, par exemple, les inflexions et le « [transfert de suffixe]({{ site.baseurl }}{{ site.spt_explained }}) » sont pris en charge par [n2t.net](http://n2t.net/) pour tous les types d’identifiants, mais pas par [doi.org](https://www.doi.org/) ni par [handle.net](http://handle.net/) (qui dispose d’une fonctionnalité similaire appelée « Template Handles ») pour aucun type d’identifiant.
 
-## Qu'entendez-vous par « silos » ?
+### Qu'entendez-vous par « silos » ?
 
 En règle générale, les services basés sur des formats d’identifiant sont conçus comme des silos, ou des [plates-formes fermées](https://en.wikipedia.org/wiki/Closed_platform), gérant un type d'identifiant particulier tel que Handle, DOI ou PURL. Chaque silo remplit les mêmes fonctions principales \- associer des noms (chaînes de caractères d'identifiant) à des choses (objets ou métadonnées). L'exclusion de tous les types d'identifiant, sauf un, peut aider à conquérir des marchés, mais elle est contre-productive et exclusive. Elle nécessite la reconstruction du même ensemble de services pour chaque format et viole les principes de base de l’ouverture.
 

@@ -12,7 +12,7 @@ persistence. Decentralized, open source, metadata linking.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="Why ARKs came about" %}
 
 By 2001 there were four major persistent identifier (PID) types, so why was it
 necessary to create a fifth? The origin story of the fifth type, the Archival

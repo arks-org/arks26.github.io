@@ -6,11 +6,13 @@ date: 2021-01-23T23:03:44+00:00
 published: true
 ---
 
-Creating & Managing ARKs: Use alphanumerics, inert hyphens. Opt for opaque identifiers. Choose URL format for stability. Guide to minters & resolvers.
+Creating and managing ARKs via alphanumerics, betanumerics, and inert hyphens.
+Opt for opaque identifiers. Choose URL format for stability.
+Guide to minters and resolvers.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="Minting and citing ARKs" %}
 
 ## Minting ARK name strings
 

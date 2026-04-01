@@ -12,7 +12,7 @@ and Donny Winston.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="ARK tutorial" %}
 
 The ARK tutorial described below was first offered in 2023 and has been given
 at conferences such as Code4lib, IIIF, JCDL, iPRES, and Open Repositories.

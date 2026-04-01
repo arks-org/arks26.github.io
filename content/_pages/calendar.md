@@ -10,7 +10,7 @@ This calendar lists events relevant to the ARK community.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="ARK-related events calendar" %}
 
 This calendar lists events relevant to the ARK community.
 

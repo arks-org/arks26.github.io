@@ -12,7 +12,7 @@ advantages they offer in terms of cost, flexibility, metadata, and more.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="ARKs compared to other PIDs" %}
 
 ## Reasons to use ARKs as compared to DOIs
 

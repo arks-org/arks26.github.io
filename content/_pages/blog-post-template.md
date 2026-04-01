@@ -10,7 +10,7 @@ help spark ideas for an ARK organization to describe their ARK service.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="News post template" %}
 
 These are questions to help get started telling the story of your organization's use of ARKs.
 

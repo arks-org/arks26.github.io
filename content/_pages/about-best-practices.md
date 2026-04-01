@@ -12,7 +12,7 @@ management.
 
 <!--more-->
 
-{% include content/section.html do="start" color="cool" label="XXX" %}
+{% include content/section.html do="start" color="cool" label="ARK best practices" %}
 
 ## ARK creation and object lifecycle
 
