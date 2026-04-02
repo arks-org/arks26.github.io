@@ -15,7 +15,7 @@ into ARK Alliance.
 
 {% include content/section.html do="start" color="cool" label="ARK Basics" %}
 
-Did you know...
+## Did you know...
 
 * ... that ARK is a PID (Persistent IDentifier), along with DOI, ORCID, and ROR?
 * ... that ARK may be the fastest growing PID scheme you've never heard of?

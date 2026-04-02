@@ -8,6 +8,7 @@
   --arka-bg-warm: #f9f4e7;
   --arka-bg-cool: #ffffff;
   --arka-bg-dark: #000000;
+  --arka-bg-grey: #E2E2E2;
 
   --arka-callout-bg: #e3f5ff;
   --arka-callout-border: #063e5d;
@@ -237,6 +238,16 @@
     p {
       margin: 0; // Remove default browser margins
     }
+  }
+
+  /* grey box for side notes, tips, or as a visual break */
+  &__side-note {
+    background-color: var(--arka-bg-grey);
+    color: var(--arka-color-text);
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
   }
 
   /* dark highlight / CTA (Call to Action) box */

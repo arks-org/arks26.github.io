@@ -36,6 +36,8 @@ Library and DuraSpace/LYRASIS. Launched in 2018, it has gained the support of
 ARK Alliance has been a member of the [NDSA], an international consortium
 committed to the long-term preservation of digital information.
 
+{% include content/section.html do="changeto" color="warm" label="How to get involved" %}
+
 ## How to get involved
 
 1.  Join an ARK discussion forum
@@ -53,7 +55,7 @@ committed to the long-term preservation of digital information.
 9.  Tell us about your [interest in helping with the work of the ARK Alliance]
 10.  [Contact us] about joining one of the [working groups]
 
-{% include content/section.html do="changeto" color="warm" label="Who is creating ARKs" %}
+{% include content/section.html do="changeto" color="cool" label="Who is creating ARKs" %}
 
 ## Who is creating ARKs
 
@@ -67,7 +69,7 @@ this [online request form].
 
 ![chart of growth of ARK-assigning organizations since 2001][]{: .img-thumbnail .img-fluid loading="lazy" width="534"}
 
-What ARKs are being assigned to (February 2023):
+### What ARKs are being assigned to (November 2025):
 
 -   genealogical records (15 billion [FamilySearch])
 -   publisher content (157 million [Portico])
@@ -85,6 +87,9 @@ What ARKs are being assigned to (February 2023):
 -   historic maps (334,000 [Princeton University Libraries])
 -   vocabulary terms (30,000 [Periodo], [YAMZ])
 -   datasets, journals, archeological artifacts, living beings, etc.
+{: .list-2-columns }
+
+<section class="arka__side-note" aria-label="Expressions of interest" markdown="1">
 
 We continue to receive [expressions of interest][interest in helping with the
 work of the ARK Alliance] and have attracted support from the following
@@ -140,6 +145,7 @@ work of the ARK Alliance] and have attracted support from the following
 -   Zürcher Hochschule der Künste
 {: .list-2-columns }
 
+</section>
 
 [N2T.net]: https://n2t.net
 [Archival Resource Key Community Code of Conduct]: about-ark-community-code-of-conduct.md
