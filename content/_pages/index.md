@@ -30,7 +30,7 @@ ARKs are open, mainstream, non-paywalled, decentralized persistent identifiers
 that you can start creating in under 48 hours. They identify anything digital,
 physical, or abstract.
 
-{% include content/image.html
+{% include content/fig.html
   url="/assets/images/pages/index/ark_things.png"
   description="Some things that have ARKs — an article, violin, genealogy, painting, book, sports photo, and plant specimen — assigned by the Louvre, Smithsonian Institution, Internet Archive, California Digital Library, and FamilySearch."
 %}
@@ -65,7 +65,7 @@ organization. If you wish to get involved in the ARK Alliance, consider
 joining one of its [working groups].
 {: .arka__highlight}
 
-{% include content/image.html
+{% include content/fig.html
   url="/assets/images/pages/index/cropped-ARKsInTheOpen-1536x957.jpg"
   description="Working on the ARK. From a 1401 manuscript page, illuminated by Johannette Ravenelle, that itself has an ARK identifier: <[https://n2t.net/ark:12148/btv1b8449691v/f29](https://n2t.net/ark:12148/btv1b8449691v/f29)> (source gallica.bnf.fr, National Library of France)."
 %}

@@ -24,7 +24,7 @@ the open ARK infrastructure, which consists of standards, best practices, the
 {% capture map_caption %}
   Global distribution of over {{ site.num_ark_orgs }} ARK organizations.
 {% endcapture %}
-{% include content/image.html
+{% include content/fig.html
   url="/assets/images/pages/community/arkamap202407.png"
   description=map_caption
   link="https://www.google.com/maps/d/u/0/edit?mid=1ALGeRERECL36f2pg7pqrthUYNmuU43UM&usp=sharing"

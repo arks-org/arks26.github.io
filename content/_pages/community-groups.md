@@ -188,7 +188,7 @@ for its supporting documents (this wiki is unfortunately not open due to PII con
 *   Romuald Verrier, French Ministry of Education
 *   Sefakor Ankora, ex-WACREN
 
-{% include content/image.html
+{% include content/fig.html
   url="/assets/images/pages/about-ark-naans-and-systems/NAAN_slice.jpg"
   description="Tasty NAAN bread" nocaption="1"
 %}
