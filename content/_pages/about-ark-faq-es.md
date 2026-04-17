@@ -18,6 +18,7 @@ Preguntas frecuentes y respuestas sobre ARK.
 {% include content/section.html do="changeto" color="warm" label="Lo esencial" %}
 
 ## Lo esencial
+{: .faq-heading }
 
 ### ¿Cómo puedo dar comentarios sobre este documento?
 
@@ -111,6 +112,7 @@ Aquí está la distribución global de las [organizaciones registradas para crea
 {% include content/section.html do="changeto" color="cool" label="Empezando" %}
 
 ## Empezando
+{: .faq-heading }
 
 ### ¿Qué necesito para crear ARK? {#creating}
 
@@ -209,6 +211,7 @@ Nuestro logotipo y acrónimo pueden evocar la historia del Arca de Noé, compart
 {% include content/section.html do="changeto" color="warm" label="Mas allá de lo básico" %}
 
 ## Mas allá de lo básico
+{: .faq-heading }
 
 ### ¿Qué es el N2T? {#what-n2t}
 
@@ -297,6 +300,7 @@ debido a que difieren solo por el sufijo .`pdf` o .`html`, se puede inferir que 
 {% include content/section.html do="changeto" color="cool" label="Espacios de nombres" %}
 
 ## Espacios de nombres y subespacios de nombres ARK
+{: .faq-heading }
 
 ### ¿Cuál es el propósito del NAAN?
 
@@ -376,6 +380,7 @@ Los NAAN son transferibles. Si su organización entra o sale de una relación co
 {% include content/section.html do="changeto" color="warm" label="ARK y otros identificadores" %}
 
 ## ARK y otros identificadores
+{: .faq-heading }
 
 ### ¿Por qué usaría ARK en comparación con, por ejemplo, DOI?
 
@@ -483,6 +488,7 @@ Las diferencias concretas que experimentamos, como los *metadatos*, las páginas
 {% include content/section.html do="changeto" color="cool" label="De la cuna a la tumba" %}
 
 ## De la cuna a la tumba
+{: .faq-heading }
 
 ### ¿Cuándo en mi flujo de trabajo debo crear ARK?
 

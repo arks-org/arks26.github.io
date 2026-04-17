@@ -19,6 +19,7 @@ française du document [ARK Identifiers FAQ](/about/ark-faq-en/).
 {% include content/section.html do="changeto" color="warm" label="Les bases" %}
 
 ## Les bases
+{: .faq-heading }
 
 ### Comment puis-je donner mon avis sur ce document ?
 
@@ -120,6 +121,7 @@ Voici la répartition globale des [organisations enregistrées comme attributric
 {% include content/section.html do="changeto" color="cool" label="Pour commencer" %}
 
 ## Pour commencer
+{: .faq-heading }
 
 ###  De quoi ai-je besoin pour créer des ARK ? {#creating}
 
@@ -214,6 +216,7 @@ Notre logo et notre acronyme évoquent peut-être l'histoire de l'Arche de Noé,
 {% include content/section.html do="changeto" color="warm" label="Pour aller plus loin" %}
 
 ## Pour aller plus loin
+{: .faq-heading }
 
 ### Qu'est-ce que N2T ? {#what-n2t}
 
@@ -302,6 +305,7 @@ Comme ils ne diffèrent que par le suffixe .pdf ou .html, on peut en déduire qu
 {% include content/section.html do="changeto" color="cool" label="Espace de noms" %}
 
 ## Espaces de noms et sous-espaces de noms ARK
+{: .faq-heading }
 
 ### Quel est le but du NAAN ?
 
@@ -380,6 +384,7 @@ Vous pouvez demander une modification de l'entrée de registre d'un NAAN relatif
 {% include content/section.html do="changeto" color="warm" label="Autres identifiants" %}
 
 ## ARK et les autres identifiants
+{: .faq-heading }
 
 ### Pourquoi utiliser des ARK plutôt que des DOI, par exemple ?
 
@@ -488,6 +493,7 @@ Les différences concrètes que nous remarquons, sur les **métadonnées**, les 
 {% include content/section.html do="changeto" color="cool" label="Du berceau au tombeau" %}
 
 ## Du berceau au tombeau
+{: .faq-heading }
 
 ### Quand dois-je créer des ARK dans mon processus de travail ?
 

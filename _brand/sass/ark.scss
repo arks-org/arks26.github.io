@@ -185,23 +185,27 @@
   &__content h6 {
     margin-top: 2rem;
     margin-bottom: 0.75rem;
+    padding-bottom: 1.3rem;
     line-height: 1.25;
   }
 
   /* gold secondary headings */
-  &__content h2,
-  &__content h3.section-heading,
-  &__section-heading {
+  &__content h2 {
     color: var(--arka-color-gold);
     font-size: 1.9rem;
     font-weight: 400;
   }
 
+  &__content h2.faq-heading {
+    color: var(--arka-color-text);
+    padding-bottom: 0.2rem;
+  }
+
   /* gold tertiary headings */
-  &__tertiary {
+  &__content h3,
+  &__content h4 {
     color: var(--arka-color-gold);
-    font-size: 1.4rem;
-    font-weight: 400;
+    font-size: 1.7rem;
   }
 
   &__content a {
@@ -244,8 +248,8 @@
   &__side-note {
     background-color: var(--arka-bg-grey);
     color: var(--arka-color-text);
-    padding: 1rem 1.25rem;
-    margin: 1.5rem 0;
+    padding: 1.25rem 1.25rem;
+    margin: 1.9rem 0;
     font-size: 0.95rem;
     line-height: 1.5;
   }
@@ -255,7 +259,7 @@
     background-color: var(--arka-highlight-bg);
     color: var(--arka-highlight-text);
     padding: 1.25rem 1.5rem;
-    margin: 1.5rem 0;
+    margin: 1.7rem 0;
     line-height: 1.6;
   }
 

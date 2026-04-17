@@ -18,6 +18,7 @@ Frequently Asked Questions and Answers about ARKs (English version).
 {% include content/section.html do="changeto" color="warm" label="Basics" %}
 
 ## Basics
+{: .faq-heading }
 
 ### How can I give feedback on this document?
 
@@ -125,6 +126,7 @@ Below is the global distribution of [organizations registered to create ARKs]({{
 {% include content/section.html do="changeto" color="cool" label="Getting started" %}
 
 ## Getting started
+{: .faq-heading }
 
 ### What do I need to create ARKs? {#creating}
 
@@ -231,6 +233,7 @@ Our logo and acronym may evoke the story of Noah's Ark, which is shared by the A
 {% include content/section.html do="changeto" color="warm" label="Beyond the basics" %}
 
 ## Beyond the basics
+{: .faq-heading }
 
 ### What is N2T? {#what-n2t}
 
@@ -319,6 +322,7 @@ because they differ only by the suffix .pdf or .html, it can be inferred that t
 {% include content/section.html do="changeto" color="cool" label="ARK Namespaces" %}
 
 ## ARK namespaces and sub-namespaces
+{: .faq-heading }
 
 ### What is the purpose of the NAAN?
 
@@ -399,6 +403,7 @@ NAANs are portable. If your organization transitions into or out of a vendor rel
 {% include content/section.html do="changeto" color="warm" label="ARKs and other identifiers" %}
 
 ## ARKs and other identifiers
+{: .faq-heading }
 
 ### Why would I use ARKs compared to, for example, DOIs?
 
@@ -506,6 +511,7 @@ The concrete differences that we experience, such as _metadata_, landing pages,
 {% include content/section.html do="changeto" color="cool" label="From cradle to grave" %}
 
 ## From cradle to grave
+{: .faq-heading }
 
 ### When in my workflow should I create ARKs?
 
