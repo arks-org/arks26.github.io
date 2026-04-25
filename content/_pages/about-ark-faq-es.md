@@ -105,9 +105,16 @@ Eso es un poco difícil de decir porque las ARK están muy descentralizadas, per
 * Colecciones de archivo de Internet,  
 * Perfiles de investigadores ORCID, etc.
 
-Aquí está la distribución global de las [organizaciones registradas para crear ARK]({{ site.list_ark_orgs }}) a partir de abril de 2020\. Al hacer clic en la imagen estática a continuación, debería acceder a un mapa actualizado y ampliable.
+Aquí está la distribución global de las [organizaciones registradas para crear ARK]({{ site.list_ark_orgs }}).
 
-[![][static map]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][zoomable map]
+{% capture map_caption %}
+  La distribución global de las organizaciones registradas para crear ARK. Al hacer clic en esta imagen estática, debería acceder a un mapa actualizado y ampliable.
+{% endcapture %}
+{% include content/fig.html
+  url="/assets/images/pages/community/arkamap202407.png"
+  description=map_caption
+  link="https://cdluc3.github.io/naan_reg_priv/"
+%}
 
 {% include content/section.html do="changeto" color="cool" label="Empezando" %}
 
@@ -156,7 +163,7 @@ Las cadenas de identificadores persistentes son típicamente *opacas*, revelando
 
 #### Ejemplos de cadenas con un rango de opacidad
 
-<div class="table-responsive" markdown=1>
+<div class="table-responsive" markdown="1">
 |----|----|----|
 | **no opaco** | Archivo permanente de Netscape | Gay\_Divorcee\_1934\_April\_1 | Resolvedor de nombre a cosa |
 | **opaco-ish** | x0001, x0002,..., x9998 | GD/1934/04/01 | n2t.net |
@@ -223,8 +230,12 @@ Una vez finalizada la resolución, el usuario a menudo no se da cuenta, a menos 
 
 ### ¿Cómo funciona N2T?
 
-![Structure of the N2T resolver](../assets/images/share/n2t_arch_classic.jpg)
+{% include content/fig.html
+  url="/assets/images/share/n2t_arch_classic.jpg"
+  description="Estructura del resolvedor N2T (hasta 2024)."
+%}
 
+(Esta respuesta está obsoleta actualmente.)
 Cuando se recibe una solicitud de resolución del público general, N2T busca el identificador y redirige el enlace original a un enlace de reenvío. Para ello, utiliza dos patrones de resolución diferentes. Para empezar, N2T intenta resolver según la información contenida en un identificador individual almacenado. De no ser posible, intenta resolver según las reglas de clase almacenadas, según el tipo de identificador.
 
 N2T almacena un tipo diferente de datos para cada patrón. En primer lugar, almacena registros individuales para aproximadamente 50 millones de identificadores de objetos (p. ej., ARK, DOI) que obtiene de tres fuentes: [EZID.cdlib.org](https://ezid.cdlib.org), [Internet Archive](https://archive.org) y [YAMZ.net](https://yamz.net). Cuando dichos registros incluyen una URL de redirección (_target_) y [metadatos](#metadata) descriptivos, N2T puede actuar sobre las [inflexiones](#inflection), así como realizar el [paso de sufijos]({{ site.baseurl }}{{ site.spt_explained }}) y la negociación de contenido. Para facilitar la creación y el mantenimiento de registros de identificadores individuales, existe una API de N2T que requiere credenciales de inicio de sesión. La API también permite operaciones por lotes y la generación de identificadores únicos (acuñación).
@@ -279,7 +290,7 @@ En este caso, el paso de sufijo le ahorró tener que mantener registros para tre
 
 ### ¿Cuáles son las partes de un ARK?
 
-{% include content/anatomy3.html %}
+{% include content/ascii_art.html url="content/anatomy3.txt" description="Un vistazo detallado a la anatomía de un ARK. Puedes identificar un ARK por su etiqueta interna `ark:`." %}
 
 ### ¿Puedo asignar ARK a cosas dentro de algo que ya tiene un ARK? {#already-ark}
 
@@ -314,7 +325,7 @@ Todos los NAAN deben estar registrados en N2T e incluidos en el registro públic
 
 Funcionan de forma muy similar a todos los espacios de nombres. Dado un prefijo asociado a un espacio de nombres, este prefijo se puede "extender" (añadiendo caracteres al final) para crear un nuevo subespacio de nombres (directamente debajo) asociado con el prefijo extendido. Si los prefijos extendidos no entran en conflicto, tampoco lo harán los nombres en los espacios de nombres asociados. Puede haber un espacio de nombres asociado a cualquier prefijo imaginable, cada uno con un número potencialmente infinito de nombres (ARK) que comiencen con él.
 
-<div class="table-responsive" markdown=1>
+<div class="table-responsive" markdown="1">
 |-----|-----|-----|
 | Conjunto de todos los<br>ARK que empiezan | Espacio de nombres asociado | Ejemplo de ARK en ese espacio<br>de nombres |
 | ark: | Todos los ARK | ark:99999/fk4gt2m |
@@ -330,13 +341,27 @@ El cuarto ejemplo, un ejemplo completo de ARK como prefijo, muestra que un objet
 
 ### ¿Qué es un hombro?
 
-![](../assets/images/share/lock_jargon.png)
+<div class="flex-container">
+<div class="flex-item" markdown="1">
+
+{% include content/fig.html
+  url="/assets/images/share/lock_jargon.png"
+  description="Elementos de un identificador persistente considerado como llave (cerrajero): hombro fijo, hoja altamente variable y punta (que a veces contiene información de detección de errores)."
+%}
+
+</div>
+<div class="flex-item" style="margin-left: 3rem;" markdown="1">
 
 Un _hombro_ es un subespacio de nombres bajo un NAAN. Es el conjunto de todos los ARK que comienzan con una extensión corta y fija del NAAN. Por ejemplo, en
 
       ark:12345/x5wf6789/c2/s4.pdf
 
-el hombro, /x5, extiende el NAAN, 12345. La designación corta, /x5, no es única en muchos contextos, por lo que se debe usar la designación completa y globalmente única (por ejemplo, ark:12345/x5). En la tradición clásica de los espacios de nombres, el hombro es el conjunto de todos los ARK posibles que comienzan con el nombre del hombro. Nuestro uso de este término proviene de la cerrajería, que entiende que los juegos de llaves se definen por "hombros" fijos e invariables que preceden a las "hojas" variables (formas que difieren entre llaves que comparten el mismo hombro) que le siguen.
+el hombro, /x5, extiende el NAAN, 12345. La designación corta, /x5, no es única en muchos contextos, por lo que se debe usar la designación completa y globalmente única (por ejemplo, ark:12345/x5). En la tradición clásica de los espacios de nombres, el hombro es el conjunto de todos los ARK posibles que comienzan con el nombre del hombro.
+
+</div>
+</div>
+
+Nuestro uso de este término proviene de la cerrajería, que entiende que los juegos de llaves se definen por "hombros" fijos e invariables que preceden a las "hojas" variables (formas que difieren entre llaves que comparten el mismo hombro) que le siguen.
 
 Los hombros ayudan a organizar un espacio de nombres NAAN a largo plazo. El hecho de que un espacio de nombres contenga un número infinito de ARKs posibles no significa que sea fácil encontrar un ARK sin asignar, especialmente cuando con el tiempo existen —o existían, o podrían existir— diferentes operaciones de asignación de ARKs independientes bajo él. Así como la comunidad ARK reserva los espacios de nombres NAAN de las organizaciones, se anima a cada organización a reservar subespacios de nombres de hombro. Si no se utilizan hombros desde el principio, incluso para un flujo simple de asignaciones, se corre el riesgo de crear un caos leve pero permanente en el espacio de nombres NAAN, y se podría terminar solicitando un NAAN adicional (lo cual no se recomienda) para futuros flujos de asignaciones.
 
@@ -354,7 +379,7 @@ Sí, porque hay cuatro NAAN compartidos con semántica especial que podría inte
 
 Los NAAN compartidos no son propiedad de ninguna organización. Para crear ARKs sin conflictos bajo un NAAN compartido, se requiere, como se puede imaginar, reservar un relevo, lo que implica completar un [formulario en línea para solicitar un relevo bajo un NAAN compartido]({{ site.shoulder_form_url }}) (no lo use para relevos bajo su propio NAAN no compartido).
 
-<div class="table-responsive" markdown=1>
+<div class="table-responsive" markdown="1">
 | --- | --- | --- | --- |
 | **NAAN compartido <br>_significado_** | **Propósito, significado o connotación de los ARK con este NAAN.<br><br>(Es aceptable que estos NAANs no sean opacos, ya que sus significados son inmutables).** | **¿Se espera que se resuelvan?** | **¿Se puede usar como referencia a largo plazo?** |
 | **12345** _ejemplos_ | Ejemplos de ARKs que aparecen en la documentación. Podrían resolverse, pero ningún verificador de enlaces debería preocuparse si no lo hacen. No deberían considerarse viables para una referencia a largo plazo. | quizás | no |
@@ -415,7 +440,7 @@ Estos son los principales tipos de identificadores persistentes (o esquemas).
 
 También tienen una estructura muy similar, como se ve en los ejemplos a continuación, que consta de cuatro partes:
 
-<div class="table-responsive" markdown=1>
+<div class="table-responsive" markdown="1">
 | --- | --- | --- |
 | `https://n2t.net/ark:99999/12345`<br>`https://doi.org/11.99999/12345`<br>`https://handle.net/10.99999/12345`<br>`https://purl.org/99999/12345`<br>`https:///urn:99999:12345` | | 1.  el protocolo (`https://`) más un nombre de host,<br>2.  solo para ARK y URN, también hay una etiqueta ("ark:" o "urn:"),<br>3.  la autoridad de asignación de nombre (`99999`, `10.99999` o `99999`), que es la organización o grupo que creó un identificador particular,<br>4.  y finalmente, el *nombre* o identificador local que asignó (`12345`). |
 {: .table .table-striped .table-hover }

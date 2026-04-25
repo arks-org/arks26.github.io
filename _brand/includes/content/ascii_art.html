@@ -1,0 +1,28 @@
+{% comment %}
+  Usage:
+    {% include content/ascii_art.html url="/assets/images/aart.txt" description="This is an ASCII art image." link="https://example.com" nocaption=true %}
+{% endcomment %}
+
+{%- assign width = include.width | default: "100%" -%}
+<figure class="arka__ascii_art" style="width: {{ width }};">
+
+  {% if include.link != nil %}
+    <a href="{{ include.link }}" target="_blank" rel="noopener">
+  {% endif %}
+
+    <pre aria-label="{{ include.description | strip_html }}">
+      {%- include {{ include.url }} -%}
+    </pre>
+   
+  {% if include.link != nil %}
+    </a>
+  {% endif %}
+
+  {% if include.nocaption == nil %}
+  <figcaption class="arka__caption">
+    {{ include.description | markdownify }}
+  </figcaption>
+  {% endif %}
+
+</figure>
+

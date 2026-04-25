@@ -9,6 +9,7 @@
   --arka-bg-cool: #ffffff;
   --arka-bg-dark: #000000;
   --arka-bg-grey: #E2E2E2;
+  --arka-bg-ascii-art: #e3f5ff;
 
   --arka-callout-bg: #e3f5ff;
   --arka-callout-border: #063e5d;
@@ -25,6 +26,21 @@
   --arka-radius-md: 0.5rem;
 
   --arka-content-max-width: 74rem;
+}
+
+/* flex-container and flex-item for side-by-side layouts that can easily switch
+ * to stacked layouts on smaller screens. */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;             /* Allows items to move to a new row */
+}
+
+.flex-item {
+  padding: 10px;
+  width: 100%;
+  flex-grow: 1;       /* Items expand to fill available space */
+  flex-basis: 300px;  /* The stacking threshold */
 }
 
 /* Bootstrap override */
@@ -248,7 +264,7 @@
   &__side-note {
     background-color: var(--arka-bg-grey);
     color: var(--arka-color-text);
-    padding: 1.25rem 1.25rem;
+    padding: 1.25rem 1.25rem 0.25rem 1.25rem;
     margin: 1.9rem 0;
     font-size: 0.95rem;
     line-height: 1.5;
@@ -281,8 +297,19 @@
 
   &__figure {
     display: table;
-    margin: 1.5em auto;
+    margin: 1.5rem auto;
     max-width: 100%;
+  }
+
+  &__ascii_art {
+    background-color: var(--arka-bg-ascii-art);
+    display: table;
+    padding: 0.5rem;
+    max-width: 100%;
+    line-height: 1.2;
+    pre {
+        margin: 0;
+    }
   }
 
   /* smaller captions */
@@ -293,9 +320,9 @@
     caption-side: bottom;
     color: var(--arka-caption-color);
     font-size: 1.1rem;
-    line-height: 1.45;
     font-style: italic;
     margin-top: 0.95rem;
+    line-height: 1.45;
   }
 
   /* media */

@@ -117,22 +117,23 @@ purl.org.
 
 ## ARK structure
 
+<div class="flex-container">
+<div class="flex-item" markdown="1">
+
+{% include content/ascii_art.html url="content/anatomy2.txt" description="A peek at ARK anatomy. You can spot an ARK by its internal `ark:` label, which is followed by the immutable, globally unique identifier. This includes a “Name Assigning Authority Number” (NAAN) identifying the naming organization, and then the name that it assigns to the object." %}
+
+</div>
+<div class="flex-item" style="margin-left: 2rem;" markdown="1">
+
 An ARK is represented by a sequence of characters that contains the label,
-“ark:”. When embedded in a URL, it is preceded by the protocol (https://) and
-name of a service that provides support for that ARK. That service name, or
-the “Name Mapping Authority” (NMA), is mutable and replaceable, as neither the
-web server itself nor the current web protocols are expected to last longer
-than the identified objects. The immutable, globally unique identifier follows
-the “ark:” label. This includes a “Name Assigning Authority Number” (NAAN)
-identifying the naming organization, followed by the name that it assigns to
-the object.
+`ark:`. When embedded in a URL, it is preceded by the protocol (`https://`)
+and the name of a service that provides support for that ARK. That service
+name, or the “Name Mapping Authority” (NMA), is mutable and replaceable, as
+neither the web server itself nor the current web protocols are expected to
+last longer than the identified objects.
 
-Here is a diagrammed example:
-
-{% include content/anatomy2.html %}
-
-*A peek at ARK anatomy. You can spot an ARK by its internal* *<span
-class="has-inline-color" style="color:#c88c0a">label</span>.*
+</div>
+</div>
 
 More details about ARK structure and syntax are available later in this guide.
 
@@ -149,25 +150,26 @@ Assigning ARKs to things you don’t control is discouraged because such
 identifiers tend to be fragile.
 
 Examples of things that have ARKs are listed below. Numbers are approximate,
-current as of September 2020, and self-reported by the identified ARK
+current as of November 2025, and self-reported by the identified ARK
 organizations.
 
--   genealogical records (8 billion FamilySearch)
--   publisher content (100 million Portico)
--   scientific records (22 million INIST)
--   scanned texts (20 million Internet Archive)
--   bibliographic records (15 million BnF main catalog)
--   museum specimens (11 million going on 100 million Smithsonian)
--   public health documents, many from legal discovery (15 million UCSF IDL)
--   digitized documents and objects (5 million BnF Gallica)
--   historical persons, families, and organizations (4 million SNACC)
--   finding aids and special collections (4 million Merritt)
--   resource maps (1.5 million RMap Hub)
--   educational resources (1.1 million University of Utah)
--   artistic and cultural artifacts (482,000 Louvre museum)
--   vocabulary terms (9,000 Periodo, YAMZ)
--   datasets, journals, archeological artifacts, living beings, and anything
-    else you can think of!
+-   genealogical records (15 billion [FamilySearch](https://familysearch.org/))
+-   publisher content (157 million [Portico](https://www.portico.org/))
+-   scanned texts (50 million [Internet Archive](https://archive.org/))
+-   scientific records (22 million [INIST](https://www.inist.fr/))
+-   bibliographic records (27 million [BnF main catalog](https://catalogue.bnf.fr/))
+-   museum specimens (15 million going on 100 million [Smithsonian](https://library.si.edu/))
+-   public health documents, many from legal discovery (20 million [UCSF IDL](https://www.industrydocuments.ucsf.edu/))
+-   digitized documents and objects (36 million CDL, 6 million [BnF Gallica](https://gallica.bnf.fr/GallicaEnChiffres))
+-   historical persons, families, and organizations (4 million [SNACC](https://snaccooperative.org/))
+-   finding aids and special collections (4 million [Merritt](https://merritt.cdlib.org/))
+-   library and archival objects (1.3 million [Durham University Library](https://www.durham.ac.uk/departments/library/))
+-   educational resources (1.1 million [University of Utah](https://lib.utah.edu/))
+-   fine art (490,000 [Louvre museum](https://www.louvre.fr/))
+-   historic maps (334,000 [Princeton University Libraries](https://library.princeton.edu/libraries))
+-   vocabulary terms (30,000 [Periodo](https://perio.do/), [YAMZ](https://yamz.net/))
+-   datasets, journals, archeological artifacts, living beings, etc.
+{: .list-2-columns }
 
 ## Persistence means persistent management
 

@@ -59,6 +59,9 @@ committed to the long-term preservation of digital information.
 
 ## Who is creating ARKs
 
+<div class="flex-container">
+<div class="flex-item" markdown="1">
+
 Since 2001 over [{{ site.num_ark_orgs }} organizations] across the world
 registered to assign ARKs. As of late 2025, the registry includes
 {{ site.num_national_libs }} national libraries, 215 universities,
@@ -67,25 +70,35 @@ registered to assign ARKs. As of late 2025, the registry includes
 agencies, vendors, research labs, etc). To register your organization, fill out
 this [online request form].
 
-![chart of growth of ARK-assigning organizations since 2001][]{: .img-thumbnail .img-fluid loading="lazy" width="534"}
+</div>
+<div class="flex-item" style="margin-left: 6rem;" markdown="1">
+
+{% include content/fig.html
+  url="/assets/images/share/naan_growth2025.png"
+  width="70%"
+  description="Growth of ARK-assigning organizations since 2001."
+%}
+
+</div>
+</div>
 
 ### What ARKs are being assigned to (November 2025):
 
--   genealogical records (15 billion [FamilySearch])
--   publisher content (157 million [Portico])
--   scanned texts (50 million [Internet Archive])
--   scientific records (22 million [INIST])
--   bibliographic records (27 million [BnF main catalog])
--   museum specimens (15 million going on 100 million [Smithsonian])
--   public health documents, many from legal discovery (20 million [UCSF IDL])
--   digitized documents and objects (36 million CDL, 6 million [BnF Gallica])
--   historical persons, families, and organizations (4 million [SNACC])
--   finding aids and special collections (4 million [Merritt])
--   library and archival objects (1.3 million [Durham University Library])
--   educational resources (1.1 million [University of Utah])
--   fine art (490,000 [Louvre museum])
--   historic maps (334,000 [Princeton University Libraries])
--   vocabulary terms (30,000 [Periodo], [YAMZ])
+-   genealogical records (15 billion [FamilySearch](https://familysearch.org/))
+-   publisher content (157 million [Portico](https://www.portico.org/))
+-   scanned texts (50 million [Internet Archive](https://archive.org/))
+-   scientific records (22 million [INIST](https://www.inist.fr/))
+-   bibliographic records (27 million [BnF main catalog](https://catalogue.bnf.fr/))
+-   museum specimens (15 million going on 100 million [Smithsonian](https://library.si.edu/))
+-   public health documents, many from legal discovery (20 million [UCSF IDL](https://www.industrydocuments.ucsf.edu/))
+-   digitized documents and objects (36 million CDL, 6 million [BnF Gallica](https://gallica.bnf.fr/GallicaEnChiffres))
+-   historical persons, families, and organizations (4 million [SNACC](https://snaccooperative.org/))
+-   finding aids and special collections (4 million [Merritt](https://merritt.cdlib.org/))
+-   library and archival objects (1.3 million [Durham University Library](https://www.durham.ac.uk/departments/library/))
+-   educational resources (1.1 million [University of Utah](https://lib.utah.edu/))
+-   fine art (490,000 [Louvre museum](https://www.louvre.fr/))
+-   historic maps (334,000 [Princeton University Libraries](https://library.princeton.edu/libraries))
+-   vocabulary terms (30,000 [Periodo](https://perio.do/), [YAMZ](https://yamz.net/))
 -   datasets, journals, archeological artifacts, living beings, etc.
 {: .list-2-columns }
 
@@ -167,21 +180,5 @@ work of the ARK Alliance] and have attracted support from the following
 [online request form]: {{ site.naan_form_url }}
 [online news form]: https://docs.google.com/forms/d/1e7GvJYvsMd7Qm_LdgkVaUB96dVzeou85f0VbhA4BsSs
 [chart of growth of ARK-assigning organizations since 2001]: {{ site.baseurl }}/assets/images/share/naan_growth2025.png
-[FamilySearch]: https://familysearch.org/
-[Portico]: https://www.portico.org/
-[Internet Archive]: https://archive.org/
-[INIST]: https://www.inist.fr/
-[BnF main catalog]: https://catalogue.bnf.fr/
-[Smithsonian]: https://library.si.edu/
-[UCSF IDL]: https://www.industrydocuments.ucsf.edu/
-[BnF Gallica]: https://gallica.bnf.fr/GallicaEnChiffres
-[SNACC]: https://snaccooperative.org/
-[Merritt]: https://merritt.cdlib.org/
-[Durham University Library]: https://www.durham.ac.uk/departments/library/
-[University of Utah]: https://lib.utah.edu/
-[Louvre museum]: https://www.louvre.fr/
-[Princeton University Libraries]: https://library.princeton.edu/libraries
-[Periodo]: https://perio.do/
-[YAMZ]: https://yamz.net/
 
 {% include content/section.html do="end" %}

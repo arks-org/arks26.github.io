@@ -37,8 +37,8 @@
   <div class="arka-side-layout__image" style="flex: 1 1 20rem; max-width: 100%;">
     {%- assign url = include.url -%}
     {%- assign description = include.description -%}
-    {%- assign link = include.link || default: nil -%}
-    {%- assign nocaption = include.nocaption || default: "1" -%}
+    {%- assign link = include.link | default: nil -%}
+    {%- assign nocaption = include.nocaption | default: "1" -%}
     {% include content/fig.html url=url description=description link=link nocaption=nocaption %}
   </div>
 </div>

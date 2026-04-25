@@ -38,12 +38,12 @@ registered ARK organizations.
 - worked with the Dutch [PID Guide (PIDwijzer)][] to integrate ARKs
 - made ARK Alliance stickers available to order [online here][]
 
-<div class="row" align="center" markdown=1>
+<div class="row" align="center" markdown="1">
 
 ![][chart]{: .img-thumbnail .img-responsive fetchpriority="high" height="80" loading="eager" width="160"}
 {: .col }
 
-<div class="col" markdown=1>
+<div class="col" markdown="1">
 ![][sticker]{: .img-thumbnail .img-responsive fetchpriority="high" height="142" loading="eager" width="129" }
 
 </div>

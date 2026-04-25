@@ -5,11 +5,12 @@
 
 <figure class="arka__figure">
 
+  {%- assign width = include.width | default: "100%" -%}
   {% if include.link != nil %}
     <a href="{{ include.link }}" target="_blank" rel="noopener">
   {% endif %}
 
-      <img style="display: block; max-width: 100%; height: auto;"
+      <img style="display: block; max-width: {{ width }}; height: auto;"
            src="{{ site.baseurl }}{{ include.url }}"
            alt="{{ include.description | strip_html }}" />
 

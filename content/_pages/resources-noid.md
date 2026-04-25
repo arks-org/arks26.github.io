@@ -33,7 +33,7 @@ While opaque object identifiers have distinct advantages, they aren't always eas
 
 This is where NOID (rhymes with "employed") comes in.
 
-<div class="table-responsive" markdown=1>
+<div class="table-responsive" markdown="1">
 | :---- | :---- |
 | Version: | 0.424 (2006.04.21) |
 | Documentation: | [https://metacpan.org/pod/distribution/Noid/noid](https://metacpan.org/pod/distribution/Noid/noid) |

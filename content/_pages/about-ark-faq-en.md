@@ -118,10 +118,16 @@ That's a little hard to say because ARKs are very decentralized, but more than 6
 *   Internet Archive collections,
 *   ORCID researcher profiles, etc.
 
-Below is the global distribution of [organizations registered to create ARKs]({{ site.list_ark_orgs }}). Clicking on the static image below should take you to an up-to-date, zoomable map.
+Below is the global distribution of [organizations registered to create ARKs]({{ site.list_ark_orgs }}).
 
-[![][static map]{: .img-thumbnail .img-fluid fetchpriority="high" loading="eager"}][zoomable map]
-
+{% capture map_caption %}
+  Global distribution of over {{ site.num_ark_orgs }} ARK organizations. Clicking on this static image should take you to an up-to-date, zoomable map.
+{% endcapture %}
+{% include content/fig.html
+  url="/assets/images/pages/community/arkamap202407.png"
+  description=map_caption
+  link="https://cdluc3.github.io/naan_reg_priv/"
+%}
 
 {% include content/section.html do="changeto" color="cool" label="Getting started" %}
 
@@ -176,7 +182,7 @@ Persistent identifier strings are typically opaque, deliberately revealing litt
 
 #### Examples of character strings of varying opacity
 
-<div class="table-responsive" markdown=1>
+<div class="table-responsive" markdown="1">
 |----|----|----|
 | **non-opaque** | Netscape Permanent Archive | Gay\_Divorcee\_1934\_April\_1 | Name-to-Thing Resolver |
 | **opaque-ish** | x0001, x0002, ..., x9998 | GD/1934/04/01 | n2t.net |
@@ -245,8 +251,12 @@ When resolution is finished, the user is often unaware that it happened, unless 
 
 ### How does N2T do its work?
 
-![Structure of the N2T resolver](../assets/images/share/n2t_arch_classic.jpg)
+{% include content/fig.html
+  url="/assets/images/share/n2t_arch_classic.jpg"
+  description="Structure of the N2T resolver (up until 2024)."
+%}
 
+(This answer is currently out-of-date.)
 When a resolution request comes in from the general public, N2T looks up the identifier and redirects the original link to a forwarding link. To do this it uses two different resolution "patterns". To begin, N2T tries to resolve according to information found in an individual stored identifier. Failing that, N2T tries to resolve according to any stored class rules, based on the identifier type. 
 
 N2T has a different kind of stored data for each pattern. First, it stores individual records for about 50 million object identifiers (eg, ARKs, DOIs) that it obtains from three sources: [EZID.cdlib.org](https://ezid.cdlib.org), [Internet Archive](https://archive.org), and [YAMZ.net](https://yamz.net). When such records include a redirection URL (_target_) and descriptive [metadata](#metadata), N2T can act on [inflections](#inflection) as well as perform [suffix passthrough]({{ site.baseurl }}{{ site.spt_explained }}) and "content negotiation". To support creation and maintenance of individual identifier records, there is an N2T API requiring login credentials. The API also allows batch operations and unique identifier generation (minting).
@@ -301,7 +311,7 @@ In this case, suffix passthrough saved your having to maintain registrations for
 
 ### What are the parts of an ARK? {#parts}
 
-{% include content/anatomy3.html %}
+{% include content/ascii_art.html url="content/anatomy3.txt" description="A detailed look at ARK anatomy. You can spot an ARK by its internal `ark:` label." %}
 
 ### Can I assign ARKs to things inside something that already has an ARK? {#already-ark}
 
@@ -337,7 +347,7 @@ All NAANs must be registered with N2T and listed in the public NAAN registry, wh
 They work much the same way that all namespaces work. Given a prefix associated with a namespace, this prefix can be "extended" (adding characters to the end of it) to create a new sub-namespace (directly under it) associated with the extended prefix. If the extended prefixes don't conflict, nor will the names in the associated namespaces. There can be a namespace associated with any prefix you can think of, each with a potentially infinite number of names (ARKs) that start with it.
 
 
-<div class="table-responsive" markdown=1>
+<div class="table-responsive" markdown="1">
 |-----|-----|-----|
 | Set of all ARKs starting | Associated namespace | Example ARK in that namespace |
 | ark: | All ARKs | ark:99999/fk4gt2m |
@@ -353,13 +363,27 @@ The fourth, a complete ARK-as-prefix example, shows that an object ARK is itself
 
 ### What is a shoulder? {#shoulder}
 
-![](../assets/images/share/lock_jargon.png)
+<div class="flex-container">
+<div class="flex-item" markdown="1">
+
+{% include content/fig.html
+  url="/assets/images/share/lock_jargon.png"
+  description="Parts of a persistent identifier seen as a key (locksmithing): fixed shoulder, highly variable blade, and tip (which sometimes contains error-detection information)."
+%}
+
+</div>
+<div class="flex-item" style="margin-left: 3rem;" markdown="1">
 
 A _shoulder_ is a sub-namespace under a NAAN. It is the set all ARKs starting with a short, fixed extension to the NAAN. For example, in
 
       ark:12345/x5wf6789/c2/s4.pdf
 
-the shoulder, /x5, extends the NAAN, 12345. The short designation, /x5, isn't unique in many contexts, so the fully qualified, globally unique designation should be used (for example, ark:12345/x5). In the classic namespace tradition, the shoulder is the set of all possible ARKs starting with the shoulder name. Our use of this term is borrowed from locksmithing, which understands sets of keys to be defined by fixed, unvarying "shoulders" that precede the varying "blades" (shapes that differ among keys sharing the same shoulder) that follow it.
+the shoulder, /x5, extends the NAAN, 12345. The short designation, /x5, isn't unique in many contexts, so the fully qualified, globally unique designation should be used (for example, ark:12345/x5). In the classic namespace tradition, the shoulder is the set of all possible ARKs starting with the shoulder name.
+
+</div>
+</div>
+
+Our use of this term is borrowed from locksmithing, which understands sets of keys to be defined by fixed, unvarying "shoulders" that precede the varying "blades" (shapes that differ among keys sharing the same shoulder) that follow it.
 
 Shoulders help organize a NAAN namespace for the long term. Just because a namespace contains an infinite number of possible ARKs does not mean that finding an unassigned ARK is easy, especially when over time there are – or were, or may be – different independent ARK assignment operations under it. Just as the ARK community sets aside organizations' NAAN namespaces, each organization is encouraged to set aside shoulder sub-namespaces. If you don't use shoulders from the beginning, even for one simple stream of assignments, you risk creating mild but permanent chaos in your NAAN namespace, and you may end up requesting an additional NAAN (which is discouraged) for future assignment streams.
 
@@ -377,7 +401,7 @@ Yes, because there are four shared NAANs with special semantics that you might 
 
 Shared NAANs are not owned by any one organization. In order to create ARKs without conflict under a shared NAAN requires, as you might imagine, reserving a shoulder, and that requires filling out an [online form to request a shoulder under a shared NAAN]({{ site.shoulder_form_url }}) (please don't use this for shoulders under your own, non-shared NAAN).
 
-<div class="table-responsive" markdown=1>
+<div class="table-responsive" markdown="1">
 | --- | --- | --- | --- |
 | **Shared NAAN  <br>_meaning_** | **Purpose, meaning, or connotation of ARKs with this NAAN.  <br>  <br>(It's ok for these NAANs to be _non-opaque_ since their meanings are immutable.)** | **Expect to resolve?** | **OK for long term reference?** |
 | **12345** _examples_ | Example ARKs appearing in documentation. They might resolve, but no link checker need be concerned if they don't. They should not be considered viable for long term reference. | maybe | no  |
@@ -438,7 +462,7 @@ These are the major persistent identifier types (or schemes).
 
 They also have very similar structure, as seen in the examples below, consisting of four parts:
 
-<div class="table-responsive" markdown=1>
+<div class="table-responsive" markdown="1">
 | --- | --- | --- |
 | `https://n2t.net/ark:99999/12345`<br>`https://doi.org/11.99999/12345`<br>`https://handle.net/10.99999/12345`<br>`https://purl.org/99999/12345`<br>`https:///urn:99999:12345` | | 1.  the protocol (`https://`) plus a hostname,<br>2.  just for ARK and URN, there's also a label ("ark:" or "urn:"),<br>3.  the name assigning authority (`99999`, `10.99999`, or `99999`), which is the organization or group that created a particular identifier,<br>4.  and finally, the _name_, or local identifier, that it assigned (`12345`). |
 {: .table .table-striped .table-hover }

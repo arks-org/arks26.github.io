@@ -83,7 +83,7 @@ with risk too, for example, numbers assigned sequentially reveal timing
 information and strings containing letters can unintentionally spell words
 (which is why vowels are missing from the recommended character repertoire).
 
-<div class="table-responsive" markdown=1>
+<div class="table-responsive" markdown="1">
 |                |                                      |                           |                        |
 |----------------|--------------------------------------|---------------------------|------------------------|
 | **non-opaque** | Netscape Permanent Archive           | Gay_Divorcee_1934_April_1 | Name-to-Thing Resolver |

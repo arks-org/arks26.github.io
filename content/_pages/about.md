@@ -30,20 +30,26 @@ to information. Learn below what you need to know about ARKs, whether you’re
 planning how your system or collection will use them, or you’re a developer
 building ARK tools.
 
-## ARK Anatomy
+<div class="flex-container">
+<div class="flex-item" markdown="1">
 
-{% include content/anatomy2.html %}
+### ARK Anatomy
 
-*A peek at ARK anatomy. You can spot an ARK by its internal* *<span
-class="has-inline-color" style="color:#c88c0a">label</span>.*
+{% include content/ascii_art.html url="content/anatomy2.txt" description="A peek at ARK anatomy. You can spot an ARK by its internal `ark:` label." %}
 
-Please note all ARK documentation has not yet been transferred to this site.
-This includes important ARK FAQs (Frequently Asked Questions) in English,
-French, and Spanish:
+</div>
+<div class="flex-item" style="margin-left: 2rem;" markdown="1">
+
+### Frequently Asked Questions (FAQs)
+
+ARK FAQs in English, French, and Spanish
 
 -   [FAQ about ARK identifiers 🇬🇧]
 -   [FAQ sur les identifiants ARK 🇫🇷]
 -   [FAQ sobre identificadores ARK 🇪🇸]
+
+</div>
+</div>
 
 {% include content/section.html do="changeto" color="warm" label="Recommended for all" %}
 
@@ -154,7 +160,7 @@ developing an ARK system.
 [ARK Community Code of Conduct]: about-ark-community-code-of-conduct.md
 [Why ARKs?]: about-the-ark-origin-story.md
 [ARK NAANs and systems]: about-ark-naans-and-systems.md
-[Resolver feature: suffix passthrough]: about-ark-naans-and-systems.md#feature-suffix-passthrough
+[Resolver feature: suffix passthrough]: about-ark-naans-and-systems.md#key-feature-suffix-passthrough
 [ARK features]: about-ark-features.md
 [Comparing ARKs, DOIs and other identifier systems]: about-comparing-arks-and-other-identifiers.md
 [Getting started: what to plan for as you implement ARKs]: {{ site.baseurl }}/starting

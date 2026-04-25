@@ -32,10 +32,10 @@ image3:
 Some highlights for 2025:
 
 * Implementors are welcome to add the ARK logo to their sites and collections, linking back to arks.org. The logo, with transparent (cut out) background, is available to be copied (e.g., right-click and "Save image as") in PNG or SVG format:
-<div class="row" align="center" markdown=1>
+<div class="row" align="center" markdown="1">
 ![][arklogopng]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140"}
 {: .col }
-<div class="col" markdown=1>
+<div class="col" markdown="1">
 ![][arklogosvg]{: .img-thumbnail .img-responsive fetchpriority="high" loading="eager" height="140" width="140"}
 </div>
 </div>

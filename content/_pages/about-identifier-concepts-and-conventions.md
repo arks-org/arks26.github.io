@@ -33,36 +33,7 @@ The main concepts covered include:
     information about them
 4.  Name resolution (“resolver”) services, a special class of NMA services.
 
-The terminology that follows is based on the metaphor of a key (or name or
-identifier) in <span class="has-inline-color
-has-vivid-green-cyan-color">locksmithing</span> jargon, and the concept of a
-branded plastic key-cover.
-
-           _____    slips on    _____
-        .-'  ,_,'-..  ---->  .-'     '-.
-       /    (o,o)  \\       /           \
-      :     {`"'}  ||      :             `____
-     /  .-. -"-"-  ||     /  .-.              '--^.   .^--^.        .^.
-    {  (   )       ||    {  (   )                  `-'      `-^--^-'   '--^.
-     \  `-'   _o   ||     \  '-'         ===================================}
-      :     _|<,_  ||      :             __________________________________/
-       \   (*)/(*) /        \           /
-        `-._____.-'          `-._____.-'
-    |....................|...............|....|..........................|..|
-              ^                    ^        ^                ^            ^
-              :                    :        :                :            :
-            Cover=               Bow=    Shoulder  .------ Blade         Tip
-             NMA             Scheme+NAAN    :      :  .-------------------'
-              :                  :    :     :      :  :
-              v                  v    v     v      v  v
-    |..........................|....+.....|...|......|.|
-     https://OwlBike.example.org/ark:13030/tqb3kh97gh8w   <----  Example Key
-                                 doi:10.30/tqb3kh97gh8w         with parallel
-                                 hdl:13030/tqb3kh97gh8w        parts in other
-                                 urn:13030:tqb3kh97gh8w          id schemes.
-    |..........................|.......................|....
-       Name Mapping Authority       Base object name     ...
-{: .bg-secondary-subtle }
+{% include content/ascii_art.html url="content/owl_bike_key.txt" description="Durable identifier parts follow a metal key metaphor (locksmithing). On the left, the bow (the part of the key that you hold) is optionally preceded by a mnemonic but less durable (changeable, branded plastic) key cover. To the right, the shoulder is a fixed shape followed by the highly variable, information-rich blade and the tip, which sometimes contains error-detection information." %}
 
 ## NAANs, prefixes, bases, and suffixes
 
@@ -144,6 +115,8 @@ because successor organizations, which tend to be former competitors, will
 often be motivated to extinguish your brand rather than honor previous name
 assignments. Branding is most appropriately placed in the NMA, described next.
 
+{% include content/section.html do="changeto" color="warm" label="Resolver concepts" %}
+
 ## Name Mapping Authority (NMA) services
 
 The protocol and hostname combination (e.g., https://OwlBike.example.org/) may
@@ -191,6 +164,8 @@ N2T was originally designed for global resolution of ARK identifiers, but it
 is general enough to apply to identifiers from any scheme. It’s NAAN mapping
 mechanism is functionally equivalent to and much simpler than the DOI, Handle,
 and URN resolution mechanisms.
+
+{% include content/section.html do="changeto" color="cool" label="String concepts" %}
 
 ## Opacity
 

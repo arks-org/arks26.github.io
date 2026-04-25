@@ -16,7 +16,7 @@ This calendar lists events relevant to the ARK community.
 
 ---
 
-<div class="table-responsive" markdown=1>
+<div class="table-responsive" markdown="1">
 | ***Conference*** | ***Dates*** | ***Location*** | ***Description*** | ***Deadlines*** | ***Notes*** |
 |---|---|---|---|---|---|
 | BigData2024 | 2024.12-15-18 | Washington, DC | [bigdataieee.org/BigData2024/CallPapers.html](https://bigdataieee.org/BigData2024/CallPapers.html) |     | ARK tutorial submitted |

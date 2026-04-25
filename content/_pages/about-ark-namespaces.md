@@ -26,7 +26,7 @@ names (ARKs) that start with it.
 ARK namespaces begin with the Name Assigning Authority Number (NAAN), and can
 be further extended by a shoulder.
 
-<div class="table-responsive" markdown=1>
+<div class="table-responsive" markdown="1">
 | ***Set of all ARKs starting*** | ***Associated namespace***             | ***Example ARK in that namespace*** |
 |--------------------------------|----------------------------------------|-------------------------------------|
 | ark:                          | All ARKs                               | ark:99999/fk4gt2m                  |
