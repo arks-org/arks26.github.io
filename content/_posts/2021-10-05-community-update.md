@@ -8,6 +8,7 @@ date: 2021-10-05T16:18:46+00:00
 published: true
 image:
   url: "/assets/images/posts/naan_growth_oct_2021.png"
+  alt: "Chart of growth of ARK-assigning organizations from 2001 to October 2021"
 ---
 
 Welcome David Nogueiras Blanco and Stéphanie Gregorio to the
@@ -23,7 +24,7 @@ technical information (INIST) in France.
 
 An updated snapshot of a few ARK community numbers
 
-![chart of growth of ARK-assigning organizations since 2001]{: .img-thumbnail .img-responsive loading="eager" }
+{% include content/fig.html url=page.image.url description=page.image.alt nocaption=true %}
 
 -   Organizations registered to assign ARKs: 838 (+77)
 -   Known number of ARKs in the world: 8.2 billion
