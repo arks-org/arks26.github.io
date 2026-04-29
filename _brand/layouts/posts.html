@@ -14,11 +14,16 @@ layout: default
 {% for post in site.posts %}
 	<div class="row py-2 my-2">
 		<div class="col-2">
-		  {% if post.image %}
-			<img src="{{ site.baseurl }}{{ post.image.url }}" alt="Feature image for blog post: {{ post.title }}" class="img-thumbnail img-fluid">
-		  {% else %}
-            <img src="{{ site.baseurl }}/assets/images/posts/arka_blog_default.png" alt="Default feature image for blog post: {{ post.title }}" class="img-thumbnail img-fluid">
-		  {% endif %}
+		{% if post.image %}
+          {% assign image_url = post.image.url %}
+          {% assign image_alt = "Feature image for blog post: " %}
+        {% else %}
+          {% assign image_url = "/assets/images/posts/arka_blog_default.png" %}
+          {% assign image_alt = "Default feature image for blog post: " %}
+        {% endif %}
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                <img src="{{ site.baseurl }}{{ image_url }}" alt="{{ image_alt }}{{ post.title }}" class="img-thumbnail img-fluid">
+            </a>
 		</div>
 		<div class="col-10">
 			<h2 class="h3">

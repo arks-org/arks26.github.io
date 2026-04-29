@@ -1,10 +1,11 @@
 ---
 title: Overview of ARK organizations
-permalink: /naan/stats/
+permalink: /community/ark-organizations/
+redirect_from: /naans/
 published: true
 ---
 
-Hourly updated snapshot of ARK organizations and distribution of local reslover
+Hourly updated snapshot of ARK organizations and distribution of local resolver
 top-level domains.
 
 <!--more-->
@@ -23,6 +24,7 @@ top-level domains.
   pointer-events: none;
 }
 #tldGraph {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -50,13 +52,14 @@ local resolver (server) domain name, bypassing the global resolver.
 
 ## Distribution of top-level domains (TLDs)
 
-The range of top-level domains -- the final part of the domain name -- across
-all local ARK resolvers is shown below. There is also a simple
+The range of top-level domains (TLDs) -- the final part of the domain name --
+across all local ARK resolvers is shown below. There is also a simple
 [NAAN registry search interface]({{ site.list_ark_orgs }}).
 
-<br/>
-<div id="tldGraph"></div>
-<br/>
+<div id="tld-container" style="display: flex; flex-direction: row; align-items: flex-start; gap: 20px;">
+  <div id="tldGraph"></div>
+  <div id="tldLegend" role="complementary" aria-label="TLD Legend"></div>
+</div>
 
 ## Organizations registered per year
 
@@ -172,6 +175,8 @@ function yearGraph(data, tld = null) {
 
     const svg = d3.select("#yearGraph")
         .append("svg")
+        .attr("role", "img")
+        .attr("aria-label", "Bar chart showing the number of new NAAN registrations per year.")
         .attr("width", "100%")
         .attr("height", height + margin.top + margin.bottom)
         .attr("viewBox", `0 0 ${fullWidth} ${height + margin.top + margin.bottom}`)
@@ -280,7 +285,7 @@ function getTldCounts(data) {
 }
 
 // future refinement(?): use TLD of org URL rather than the resolver URL
-function tldGraph(data) {
+function tldGraph(data, countWithUrl) {
     const tldCounts = getTldCounts(data);
 
     const total = Object.values(tldCounts).reduce((sum, val) => sum + val, 0);
@@ -296,13 +301,28 @@ function tldGraph(data) {
     const radius =  size / 2;
 
     const svg = d3.select("#tldGraph")
-        .style("display", "flex")
-        .style("justify-content", "center")
         .append("svg")
+        .attr("role", "img")
+        .attr("aria-label", "Donut chart showing current percentage of NAAN registrations per TLD. Click on a slice to filter the year bar chart below by that TLD.")
         .attr("width", size)
         .attr("height", size)
         .append("g")
         .attr("transform", `translate(${size / 2}, ${size / 2})`);
+
+    const centerLabel = svg.append("text")
+        .attr("text-anchor", "middle")
+
+    const titleText = centerLabel.append("tspan")
+        .attr("x", 0)
+        .attr("dy", "-0.4em")
+        .style("font-size", "22px")
+        .text("Total NAANs");
+
+    const countText = centerLabel.append("tspan")
+        .attr("x", 0)
+        .attr("dy", "1.5em")
+        .style("font-size", "28px")
+        .text(countWithUrl.toLocaleString());
 
     const color = d3.scaleOrdinal()
         .domain(tldData.map(d => d.tld))
@@ -329,7 +349,9 @@ function tldGraph(data) {
     arcs.append("path")
         .attr("d", arc)
         .attr("fill", d => color(d.data.tld))
-        .style("cursor", "pointer") // 👈 Add pointer cursor
+        .style("stroke", "white")
+        .style("stroke-width", "1px")
+        .style("cursor", "pointer")
         .on("mouseover", (event, d) => {
             const percent = ((d.data.count / total) * 100).toFixed(2);
             tooltip.transition().duration(200).style("opacity", 0.9);
@@ -345,7 +367,7 @@ function tldGraph(data) {
         .attr("transform", d => `translate(${arc.centroid(d)})`)
         .attr("text-anchor", "middle")
         .attr("dy", "0.35em")
-        .style("font-size", "11px")
+        .style("font-size", "16px")
         .style("fill", "#fff")
         .text(d => {
             const percent = (d.data.count / total) * 100;
@@ -356,7 +378,49 @@ function tldGraph(data) {
 		d3.select("#yearGraph").selectAll("*").remove();
 		yearGraph(data, d.data.tld);
 		document.getElementById('registered-naans-per-year').scrollIntoView({ behavior: 'smooth' });
-	});		
+	});	
+
+    // Legend
+    const maxLegendEntries = 20;    // Limit number of entries
+    const legendData = tldData.slice(0, maxLegendEntries);
+
+    // Calculate how many items per column (N / 2)
+    const itemsPerColumn = Math.ceil(legendData.length / 2);
+
+    const legend = d3.select("#tldLegend")
+        .append("ul")
+        .style("display", "grid")
+        // Force 2 columns
+        .style("grid-template-columns", "max-content max-content")
+        // Fill the first column vertically before moving to the next
+        .style("grid-auto-flow", "column")
+        // Define the number of rows to ensure equal height
+        .style("grid-template-rows", `repeat(${itemsPerColumn}, auto)`)
+        .style("gap", "5px 75px") // first number vertical, second horizontal
+        .style("list-style", "none")
+        .style("padding", "0")
+        .style("margin", "0");
+
+    const legendItems = legend.selectAll("li")
+        .data(legendData)
+        .enter()
+        .append("li")
+        .style("display", "flex")
+        .style("align-items", "center")
+        .style("font-size", "16px");
+
+    // Swatch
+    legendItems.append("span")
+        .style("width", "15px")
+        .style("height", "15px")
+        .style("background-color", d => color(d.tld))
+        .style("margin-right", "8px")
+        .style("border-radius", "50%")
+        .style("flex-shrink", "0"); // Prevents swatch from squishing
+
+    // Text
+    legendItems.append("span")
+        .text(d => `.${d.tld} (${((d.count / total) * 100).toFixed(1)}%)`);
 }
 
 let data;
@@ -386,7 +450,7 @@ fetch(naan_registry_url)
             ul.appendChild(li);
         });
 
-        tldGraph(data);
+        tldGraph(data, countWithUrl);
         yearGraph(data);
 
         document.getElementById("resetYearGraph").addEventListener("click", () => {

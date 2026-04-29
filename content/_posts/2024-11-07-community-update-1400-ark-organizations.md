@@ -8,6 +8,7 @@ date: 2024-11-06
 published: true
 image:
   url: "/assets/images/posts/arka_com_update_nov2024.png"
+  alt: "Combined image showing the percent of ARK organizations per top-level domain and the logo for World Preservation Day #WDPD2024."
 ---
 
 The ARK Alliance surpasses 1400 ARK organizations and reveals a
@@ -15,8 +16,7 @@ promising new ARK minting and resolving tool.
 
 <!--more-->
 
-![][arkabytld]{: .img-thumbnail .img-responsive fetchpriority="high" height="auto" loading="eager" }
-*Percent of ARK organizations per top-level domain. #WDPD2024*
+{% include content/fig.html url=page.image.url description=page.image.alt %}
 
 Today being [World Digital Preservation Day](https://www.dpconline.org/events/world-digital-preservation-day),
 we are delighted to announce that the number of ARK organizations has surpassed 1400. That number includes
